@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newRecipe.css">
+</head>
+<body>
+    <h1>Welcome to your personal page</h1>
+    <p>Here you can insert your own created recipes or optimized one and share it with the other users</p>
+    <p>It will get reviewd so make sure to put your touch and make it delicious</p>
+     <form method="POST">
+        <label for="fname">Add a title:</label>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="fname">Add a description:</label><br><br>
+        <textarea rows = "5" cols = "60" name = "description" id="ingredient"></textarea><br><br>
+        <label for="uploadImages">Upload Images or videos for your recipe</label><br><br>
+        <input type="file" id="myFile" name="filename"><br>
+        <p>Please put your ingredients below one by one</p>
+        <p>After putting the first ingredients press the button then put the second and so on</p>
+        <textarea rows = "5" cols = "60" name = "description" id="ingredient"></textarea><br><br>
+        <input type="submit" id="button" value="Add an ingredient"><br><br>
+        <p>In this section, you need to provide a well-explained instruction for the users</p>
+        <p>Do as you did above but this time provide instructions for every step</p>
+        <textarea rows = "5" cols = "60" name = "description" id="steps"></textarea><br><br>
+        <input type="submit" id="button3" value="Add a step"><br><br>
+        <input type="submit" id="button4" value="Done"><br><br>
+        <button type="submit" formaction="/">Submit</button>
+    </form>   
+    
+    <script src="newRecipe.js"></script>
+</body>
+</html>
