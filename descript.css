@@ -12,13 +12,15 @@ body {
 button {
     margin: 20px;
     width: 50px;
+    border-radius: 5px;
+    border: none;
 }
 
 
 img {
     float: right;
     height: 350px;
-    width: 350px;
+    width: 500px;
 }
 
 .food-time {
@@ -45,7 +47,6 @@ a {
     flex-direction: column;
     min-height: 20vh;
     background-color: white;
-    margin: 20px;
 }
 
 .review {
@@ -61,19 +62,34 @@ a {
 .btn-finished {
     width: 80px;
     height: 35px;
+    border-radius: 5px;
+    border: none;
 }
-
+.review {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 10vh;
+}
 
 .review-pics {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 80px;
+    width: 80px;
     float: left;
+    border-radius: 50px;
 }
-
 
 .add-rating {
-    width: 160px;
+    width: 150px;
     height: 40px;
+    background-color: rgb(167, 56, 56);
 }
+
+.all-reviews {
+    display: flex;
+    flex-direction: row;
+    min-height: 40vh;
+    background-color: white; 
+}
+
 
