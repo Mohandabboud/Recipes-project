@@ -1,0 +1,197 @@
+/* .container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+body {
+    margin: 0;
+} */
+
+/* html, body{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+container > div:nth-child(1) {
+    background-color: rgb(15, 140, 172);
+}
+
+container > div:nth-child(2) {
+    background-color: rgb(43, 194, 144);
+}
+
+container > div:nth-child(3) {
+    background-color: rgb(30, 196, 24);
+}
+
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    min-width: 100px;
+    /* flex-direction: row; */
+    /* height: 100%; */
+    /* align-items: stretch; */
+
+.result {
+    border-right: turquoise;
+    border-radius: 40px;
+    background-color: whitesmoke;
+    margin: 40px;
+    font-size: 3em;
+}
+.num {
+    align-self: center;
+}
+
+.filter {
+    font-size: 1em;
+    text-decoration-line: underline;
+}
+.line {
+    text-underline-position: below;
+    text-decoration-line: underline;
+}
+.button1 {
+    background-color: orangered;
+    color: papayawhip;
+    border: 1px solid orangered;
+    margin: 100px;
+}
+.button1:hover {
+    background-color: orangered;
+    color: rgb(196, 112, 33);
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border-right: 1px solid #008CBA;
+    margin-left: 20px;
+}
+.button2:hover {
+    background-color: #cfbca0;
+    color: rgb(196, 112, 33);
+}
+
+      
+.set:hover {
+    background-color: whitesmoke;
+}
+.set {
+    background-color: white; 
+    color: black; 
+    border: 1px;
+    margin: 10px;
+    font-size: 1em;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(239, 244, 245);
+    color: black;
+    border: 5px solid whitesmoke;
+    flex-direction: row;
+    flex-grow: 6;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    justify-content: start;
+    flex-wrap: wrap;
+} 
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    gap: 10px;
+    margin: 40px;
+    min-height: 100vh;
+    background-color: white;
+    grid-template-areas:
+        "container card1 card2 card3"
+        "container card4 card5 card6"
+}
+
+.container {
+    grid-area: container;
+    text-align: center;
+
+}
+
+.card1 {
+    grid-area: card1;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+    
+}
+.card2 {
+    grid-area: card2 ;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+}
+.card3 {
+    grid-area: card3;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+}
+.card4 {
+    grid-area: card4;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+}
+.card5 {
+    grid-area: card5;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+}
+.card6 {
+    grid-area: card6;
+    text-align: center;
+    height: 50%;
+    padding: 10px;
+}
+
+
+.checked {
+    color: orange;
+}
+
+@media (min-width: 576px), (max-width: 767.98px)  { 
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    gap: 10px;
+    margin: 40px;
+    min-height: 100vh;
+    background-color: white;
+    grid-template-areas:
+        "container card1 card2 card3"
+        "container card4 card5 card6"
+}
+.container {
+  display: flex;
+  background-color: rgb(239, 244, 245);
+  color: black;
+  border: 5px solid whitesmoke;
+  flex-direction: row;
+  flex-grow: 6;
+  flex-shrink: 1;
+  flex-basis: 200px;
+  justify-content: start;
+  flex-wrap: wrap;
+} 
+
+ }
+
+
+
