@@ -1,0 +1,95 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 50vh;
+}
+body {
+    background-color: grey;
+}
+
+
+button {
+    margin: 20px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+img {
+    float: right;
+    height: 350px;
+    width: 500px;
+}
+
+.food-time {
+    background-color: white;
+    width: 250px;
+    height: 350px;
+}
+
+a {
+    color: black;
+    text-decoration: underline red;
+}
+.food-info {
+    text-align: center;
+}
+
+.recipe {
+    background-color: white;
+    height: 350px;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    background-color: white;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    background-color: white;
+}
+
+.btn-done {
+    text-align: center;
+}
+.btn-finished {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 10vh;
+}
+
+.review-pics {
+    height: 80px;
+    width: 80px;
+    float: left;
+    border-radius: 50px;
+}
+
+.add-rating {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(167, 56, 56);
+}
+
+.all-reviews {
+    display: flex;
+    flex-direction: row;
+    min-height: 40vh;
+    background-color: white; 
+}
+
+
