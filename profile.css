@@ -1,0 +1,86 @@
+.container1 {
+    background-color: aqua;
+    column-gap: 40px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    grid-gap: 40px;
+    margin-top: 20px;
+    align-content: space-around;
+    grid-template-areas:
+        "profile card1 card2 card3 pref"
+        "profile card4 card5 card6 pref"
+}
+.profile {
+    grid-area: profile;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+
+.card1{
+    grid-area: card1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+.card2{
+    grid-area: card2;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+.card3{
+    grid-area: card3;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+.card4{
+    grid-area: card4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+.card5{
+    grid-area: card5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+.card6{
+    grid-area: card6;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+}
+
+.container2 {
+    background-color: rgb(192, 235, 77);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+    
+}
+.shared {
+    text-align: center;
+}
+.flex_con{
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    margin-top: 10%;
+}
+.buttonrecipe {
+    background-color: aqua;
+    float: right;
+    height: 30px;
+    margin-right: 5%;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+}
+a {
+    text-decoration: none;
+    font-size: larger;
+}
+.pref {
+    grid-area: pref;
+    background-color: brown;
+    text-align: center;
+}
