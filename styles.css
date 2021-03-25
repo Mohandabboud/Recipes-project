@@ -66,6 +66,7 @@ nav .nav-items li a{
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 20px;
+    justify-content: space-around;
     
    
   }
@@ -328,16 +329,4 @@ nav .nav-items li a{
 	}
 
 }
-
-/* footer{
-    position: sticky;
-    top: 100%;
-    width: 100%;
-    height: 135px;
-    background-color: #87C3BD;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 70px;
-} */
 
