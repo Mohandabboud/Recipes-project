@@ -1,6 +1,6 @@
 
 .table {
-  width: 90%;
+  width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   
@@ -8,18 +8,18 @@
   
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 35px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 .card {
     
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 5px grey;
     transition: 0.3s;
     width: 100%;
     border: 2px solid #e7e7e7;
- 
     border-radius: 4px;
  
-    padding: .1rem;
   }
 
   
@@ -34,6 +34,18 @@
 
 .image11{
     max-width: 100%;
+}
+
+h1{
+  font-family: serif;
+  font-size: 25px;
+}
+.result-text{
+  font-family: serif;
+  font-size: 15px;
+  margin: 14px;
+  padding-bottom: 270px;
+
 }
 
 @media only screen and (min-width: 500px) {
