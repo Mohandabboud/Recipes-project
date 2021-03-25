@@ -1,26 +1,34 @@
 .flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     min-height: 50vh;
+    margin-top: 30px;
 }
+
 body {
-    background-color: grey;
+    background-color: rgb(224, 216, 216);
 }
 
 
 button {
     margin: 20px;
     width: 50px;
+    height: 20px;
     border-radius: 5px;
     border: none;
+    
 }
 
-
-img {
+.food-pics {
     float: right;
     height: 350px;
     width: 500px;
+}
+
+.sub{
+    height: 30px;
+    width: 50px;
 }
 
 .food-time {
@@ -33,6 +41,7 @@ a {
     color: black;
     text-decoration: underline red;
 }
+
 .food-info {
     text-align: center;
 }
@@ -40,6 +49,7 @@ a {
 .recipe {
     background-color: white;
     height: 350px;
+    margin-right: 20px;
 }
 
 .instruction {
@@ -52,24 +62,26 @@ a {
 .review {
     display: flex;
     flex-direction: column;
-    min-height: 30vh;
+    min-height: 10vh; 
     background-color: white;
 }
 
 .btn-done {
     text-align: center;
 }
+
 .btn-finished {
     width: 80px;
     height: 35px;
     border-radius: 5px;
     border: none;
 }
+
 .review {
     display: flex;
     flex-direction: column;
     background-color: white;
-    min-height: 10vh;
+     min-height: 10vh; 
 }
 
 .review-pics {
@@ -87,8 +99,8 @@ a {
 
 .all-reviews {
     display: flex;
-    flex-direction: row;
-    min-height: 40vh;
+    flex-direction: column;
+    min-height: 30vh;
     background-color: white; 
 }
 
