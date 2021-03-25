@@ -1,33 +1,43 @@
-
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("search");
-    //var x = document.querySelector("#input").value;
-    //var p = document.createElement("p");
-    //var body = document.querySelector("body")
-    //p.innerHTML = x;
-    //console.log(p);
-    //body.appendChild(p)
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=9b19014764264e228cd8cfd7de2b2457&includeIngredients="+myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=13036d4464844ed8bf5e1bb603bb0a6b&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
-        var div = document.createElement("div")
         data.results.forEach( function (item) {
-            //var p1 = document.createElement("p")
-            //p1.innerHTML = item.title;
-            //body.appendChild(p1)
-            //console.log(item.title)
-            //console.log(item.id)
-            //var image = document.createElement("img");
-            //image.src = item.image;
-            //body.appendChild(image);
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=13036d4464844ed8bf5e1bb603bb0a6b")
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
-                var a = document.querySelector("img")
-                a.src = recipe.image;
+                var card = document.createElement("div");
+                card.className = "card";
+                var container = document.createElement("div");
+                container.className = "container";
+                var image = document.createElement("img")
+                image.src = recipe.image;
+                image.className = "image11";
+                var h = document.createElement("h1");
+                h.innerHTML = recipe.title;
+                var p = document.createElement("p");
+                p.innerHTML = recipe.summary;
+                var a = document.createElement("a");
+                a.href = "http://127.0.0.1:8000/descript.html";
+                a.className = "link11"
+                var button = document.createElement("button");
+                button.innerHTML = "click here";
+                var article = document.createElement("article");
+                article.className = "article";
+                var table = document.getElementsByClassName("table")[0];
+                table.appendChild(card);
+                card.appendChild(image);
+                //card.appendChild(container);
+                article.appendChild(h);
+                article.appendChild(p);
+                card.appendChild(a);
+                //container.appendChild(button);
+                a.appendChild(article);
              //var p = document.querySelector("#dd");
-               //     p.innerHTML = recipe.title
+               //     p.innerHTML = recipe.title 
+               /*
                                console.log(recipe.title)
                                console.log(recipe.aggregateLikes)
                                console.log(recipe.readyInMinutes)
@@ -46,7 +56,7 @@
                                })
                                recipe.extendedIngredients.forEach( function (item) {
                                console.log(item.originalString)
-                               })
+                               }) */
                                
             })
         })
