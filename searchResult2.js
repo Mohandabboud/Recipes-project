@@ -18,6 +18,7 @@
                 var h = document.createElement("h1");
                 h.innerHTML = recipe.title;
                 var p = document.createElement("p");
+                p.className = "result-text";
                 p.innerHTML = recipe.summary;
                 var a = document.createElement("a");
                 a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;

@@ -55,10 +55,15 @@ nav .nav-items li a{
     padding: 5px;
 }
 .checkbox button{
-    background-color: chocolate;
     font-family: sans-serif;
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: center;
+    background: #01a3a4;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px 5px;
+    font-family: serif;
+    border-radius: 8px;
 }
 
 .flex-container {
