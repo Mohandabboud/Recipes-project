@@ -1,19 +1,15 @@
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("search");
-<<<<<<< HEAD
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=cd24179173c64af7a055e59dbc5e9042&includeIngredients="+myParam)
-=======
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=6b45bdfff904492090397e2e31619b32&includeIngredients="+myParam)
+
     fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=240f675c9ad44d34a96f35d6cb97542d&includeIngredients="+myParam)
->>>>>>> 099b2e481f8b48946001763b552aaeb2f075da71
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-<<<<<<< HEAD
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=cd24179173c64af7a055e59dbc5e9042")
-=======
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=240f675c9ad44d34a96f35d6cb97542d")
->>>>>>> 099b2e481f8b48946001763b552aaeb2f075da71
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=6b45bdfff904492090397e2e31619b32")
+
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=6b45bdfff904492090397e2e31619b32")
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 var card = document.createElement("div");

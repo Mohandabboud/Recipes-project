@@ -43,7 +43,7 @@ function myFunction1 () {
             .then( recipe => { 
                 console.log(recipe)
                 var easiestFood = document.getElementsByClassName("easiestFood")[0];
-               if (recipe.extendedIngredients.length < 5 && number < 2 ) {
+               if (recipe.extendedIngredients.length < 7 && number < 3 ) {
                 var firstCard = document.createElement("div");
                 firstCard.className = "card";
                 var image = document.createElement("img")
