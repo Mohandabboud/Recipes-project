@@ -32,9 +32,9 @@
       <div class="checkbox">
         <p id="checkbox-text1">Search for recipes take: </p>
         <br>
-        <p> Less than 30 mins &nbsp;&nbsp;<input type="checkbox" aria-label="Checkbox for following text input"></p>
-        <p> Less than 45 mins &nbsp;&nbsp;<input type="checkbox" aria-label="Checkbox for following text input"></p>
-        <p> Less than 60 mins &nbsp;&nbsp;<input type="checkbox" aria-label="Checkbox for following text input"></p>
+        <p> Less than 30 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck1" onclick="myFunction1()" aria-label="Checkbox for following text input"></p>
+        <p> Less than 45 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck2" onclick="myFunction2()" aria-label="Checkbox for following text input"></p>
+        <p> Less than 60 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck3" onclick="myFunction3()" aria-label="Checkbox for following text input"></p>
         <br> 
         <button> Submit</button>
       </div>
@@ -45,11 +45,9 @@
             <p class="text3" id="text3">Most Popular</p>
         </div>
           <div class="flex-container">
-            <div>
-              <img src="images/2021-03-15 (127).png">
+            <div class="easiestFood">
             </div>
-            <div>
-              <img src="images/2021-03-15 (26).png">
+            <div class="fastestFood">
             </div>
             <div>
               <img src="images/2021-03-15 (27).png">
@@ -122,6 +120,7 @@
               </div>
             </div>
             <script src="SeaFun.js"></script>
+            <script src="timeFunction.js"></script>
     </body>
     </html> 
 </head>
