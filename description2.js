@@ -27,9 +27,9 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=240
                 var directions = document.createElement("div");
                 directions.className = "directions"
                 recipe.extendedIngredients.forEach( function (item) {
-                    console.log(item.originalName)
+                    console.log(item.originalString)
                     var p2 = document.createElement("p");
-                    p2.innerHTML= item.originalName;
+                    p2.innerHTML= item.originalString;
                     result.appendChild(ingredient);
                     ingredient.appendChild(p2);
     
