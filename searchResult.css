@@ -119,6 +119,7 @@ container > div:nth-child(3) {
 .container {
     grid-area: container;
     text-align: center;
+    padding-top: 50px;
 
 }
 
