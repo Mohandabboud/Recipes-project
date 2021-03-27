@@ -33,11 +33,13 @@
       <div class="checkbox">
         <p id="checkbox-text1">Search for recipes take: </p>
         <br>
-        <p> Less than 30 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck1" onclick="myFunction1()" aria-label="Checkbox for following text input"></p>
-        <p> Less than 45 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck2" onclick="myFunction2()" aria-label="Checkbox for following text input"></p>
-        <p> Less than 60 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck3" onclick="myFunction3()" aria-label="Checkbox for following text input"></p>
+        <form action="nothing.asp" id="myForm" method="GET">
+        <p> Less than 30 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck1" onClick="timeFunction1()"></p>
+        <p> Less than 45 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck2" onClick="timeFunction2()"></p>
+        <p> Less than 60 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck3" onClick="timeFunction3()"></p>
         <br> 
-        <button class="checkbox-button"> Submit</button>
+        <button class="checkbox-button" >Submit</button>
+      </form>
       </div>
           <p class="p1">Find your request, choose between the best recipes,</p>
           <div class="text1">
@@ -54,18 +56,6 @@
             </div>
           </div>
           <div class="flex-container">
-            <div>
-              <img src="images/weeattogether.com-2.jpg" width="300px">
-            </div>
-            <div>
-              <img src="images/imagev170129559c4fe6c35f9bbb5529d0076fa-mz4ujz2l1q6oakt7or2_t1880.jpg" width="300px">
-            </div>
-            <div>
-                <img src="images/Italian-Food.jpg" width="300px">
-            </div>
-            <div>
-                <img src="images/food-photography-on-the-go-tips.jpg" width="300px">
-            </div>
           </div>
 
           <footer class="footer-distributed">
@@ -121,6 +111,7 @@
             </div>
             <script src="SeaFun.js"></script>
             <script src="timeFunction.js"></script>
+            <script src="timeFunction2.js"></script>
     </body>
     </html> 
 </head>

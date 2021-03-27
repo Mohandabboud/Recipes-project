@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("search");
-fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=240f675c9ad44d34a96f35d6cb97542d")
             .then(response => response.json())
             .then( recipe => { 
                 var result = document.getElementsByClassName("result11")[0];
