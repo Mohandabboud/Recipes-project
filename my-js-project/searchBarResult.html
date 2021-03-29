@@ -5,35 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/searchBarResult.css">
+    <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="description2.css">
 </head>
 <body>
-    <nav>
-        <div class="logo" id="logo">
-          <img src="images/logo new.png" width="175px">
-        </div>
-        <div class="search-box">
-          <input id="input" class="input-box" type="text" name="" placeholder="Search">
-          <a class="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
-        </div> 
-        <div class="nav-items">
-          <li><a href="#">Join Now</a></li>
-          <li><a href="#">Login</a></li>
-        </div>
-    </nav>
-    <div class="checkbox">
-        <p id="checkbox-text1">Search for recipes take: </p>
-        <br>
-        <p> Less than 30 mins &nbsp;&nbsp;<input type="checkbox" aria-label="Checkbox for following text input"></p>
-        <p> Less than 45 mins &nbsp;&nbsp;<input type="checkbox" aria-label="Checkbox for following text input"></p>
-        <p> Less than 60 mins &nbsp;&nbsp;<input type="checkbox" aria-label="Checkbox for following text input"></p>
-        <br> 
-        <button> Submit</button>
+  <nav>
+    <div class="logo" id="logo">
+      <img src="images/logo new.png">
     </div>
+    <div class="name-logo" id="name-logo">
+      <img src="images/webName.png">
+    </div>
+    <div class="search-box">
+      <input id="input" class="input-box" type="text" name="" placeholder="Search">
+      <a class="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
+    </div> 
+    <div class="nav-items">
+      <li><a href="#" id="join-now">Join </a></li>
+      <li><a href="#"> Login</a></li>
+    </div>
+  </nav>
 
-    <div class="result11">
+     
+    <div class="table">
 
     </div>
     <footer class="footer-distributed">
@@ -87,6 +82,7 @@
         
           </div>
         </div>
-        <script src="description2.js"></script>
+    <script src="/src/searchBarResult.js"></script>
+    <script src="/src/LinkingFunctions.js"></script>
 </body>
 </html>
