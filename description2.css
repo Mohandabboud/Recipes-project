@@ -3,25 +3,41 @@
 }
 
 .imageText {
+    padding-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 
 .resultImage{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    border-radius: 5px;
+    margin-left: 2%;
 
 }
 
 .recipeTitle{
-
+    margin-left: 2%;
 }
 
 .pargraph {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 180%;
+    margin-left: 1%;
+    
 
 }
 
 .ingredient {
+    margin-left:2%;
+    padding: 2%;
+    font-size: 150%;
+
 
 }
 
 .directions {
+    font-size:180%;
+    margin-left: 1%;
 
 }

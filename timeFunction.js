@@ -12,7 +12,7 @@ function myFunction () {
                 firstCard.className = "card";
                 var image = document.createElement("img")
                 image.src = item.image;
-                image.className = "image11";
+                image.className = "image10";
                 var h = document.createElement("h1");
                 h.innerHTML = item.title;
                 var a = document.createElement("a");
@@ -31,13 +31,19 @@ function myFunction () {
     }
 //
 window.addEventListener("load",myFunction);
+
 */
 function myFunction () {
         fetch("https://api.spoonacular.com/recipes/random?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&number=20")
+
+
+
         .then(response => response.json())
         .then( data => {
             var number = 0;
+
             data.recipes.forEach( function (item) {
+
             fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e")
             .then(response => response.json())
             .then( recipe => { 
@@ -112,11 +118,15 @@ function myFunction1 () {
 window.addEventListener("load",myFunction1);
 
 function myFunction2 () {
+
     fetch("https://api.spoonacular.com/recipes/random?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&number=20")
+
     .then(response => response.json())
     .then( data => {
         var number = 0;
+
         data.recipes.forEach( function (item) {
+
         fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e")
         .then(response => response.json())
         .then( recipe => { 
