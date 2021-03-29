@@ -36,11 +36,14 @@
       <div class="checkbox">
         <p id="checkbox-text1">Search for recipes take: </p>
         <br>
-        <p> Less than 30 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck1" onclick="myFunction1()" aria-label="Checkbox for following text input"></p>
-        <p> Less than 45 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck2" onclick="myFunction2()" aria-label="Checkbox for following text input"></p>
-        <p> Less than 60 mins &nbsp;&nbsp;<input type="checkbox" id="myCheck3" onclick="myFunction3()" aria-label="Checkbox for following text input"></p>
-        <br> 
-        <button class="checkbox-button"> Submit</button>
+        <form action="nothing.asp" id="myForm" method="GET">
+          <p> Less than 30 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck1" onClick="timeFunction1()"></p>
+          <p> Less than 45 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck2" onClick="timeFunction2()"></p>
+          <p> Less than 60 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck3" onClick="timeFunction3()"></p>
+          <br> 
+  
+          <button class="checkbox-button" >Submit</button>
+        </form>
         <br>
       </div>
           <p class="p1">Find your request, choose between the best recipes,</p>
