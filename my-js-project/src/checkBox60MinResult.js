@@ -1,11 +1,11 @@
 
 
 function timeFunction6 () {
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=780aeeca39d34a1bab3789be644f5daf&maxReadyTime=60&number=10")
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=caaf06b217bb42b8987e7cafc76673eb&maxReadyTime=60&number=10")
     .then(response => response.json())
     .then( data => { 
         data.results.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=caaf06b217bb42b8987e7cafc76673eb")
             .then(response => response.json())
             .then( recipe => { 
                 var card = document.createElement("div");
