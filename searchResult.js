@@ -7,7 +7,7 @@
     //p.innerHTML = x;
     //console.log(p);
     //body.appendChild(p)
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=9b19014764264e228cd8cfd7de2b2457&includeIngredients="+myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=324371cd58984b4f8b37347fb5bf8e1b&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
@@ -21,7 +21,7 @@
             //var image = document.createElement("img");
             //image.src = item.image;
             //body.appendChild(image);
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 var a = document.querySelector("img")
