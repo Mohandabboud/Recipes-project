@@ -1,7 +1,5 @@
-
-
-function timeFunction6 () {
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=780aeeca39d34a1bab3789be644f5daf&maxReadyTime=60&number=10")
+function timeFunction5 () {
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=780aeeca39d34a1bab3789be644f5daf&maxReadyTime=45&number=10")
     .then(response => response.json())
     .then( data => { 
         data.results.forEach( function (item) {
@@ -21,7 +19,7 @@ function timeFunction6 () {
                 p.className = "result-text";
                 p.innerHTML = recipe.summary;
                 var a = document.createElement("a");
-                a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
+                a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                 a.className = "link11"
                 var button = document.createElement("button");
                 button.innerHTML = "click here";
@@ -41,4 +39,4 @@ function timeFunction6 () {
         })
         })}
 
-window.addEventListener("load",timeFunction6);
+window.addEventListener("load",timeFunction5);

@@ -1,11 +1,11 @@
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("search");
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=780aeeca39d34a1bab3789be644f5daf&includeIngredients="+myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=5dc571ad8c4442e3be0ebea89c223437&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=5dc571ad8c4442e3be0ebea89c223437")
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 var card = document.createElement("div");
@@ -21,7 +21,7 @@
                 p.className = "result-text";
                 p.innerHTML = recipe.summary;
                 var a = document.createElement("a");
-                a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
+                a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                 a.className = "link11"
                 var button = document.createElement("button");
                 button.innerHTML = "click here";

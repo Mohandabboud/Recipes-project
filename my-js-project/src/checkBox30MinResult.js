@@ -62,7 +62,7 @@ function timeFunction4 () {
                     p.className = "result-text";
                     p.innerHTML = recipe.summary;
                     var a = document.createElement("a");
-                    a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
+                    a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                     a.className = "link11"
                     var button = document.createElement("button");
                     button.innerHTML = "click here";
