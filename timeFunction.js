@@ -1,5 +1,6 @@
-/*
-function myFunction () {
+
+/*function myFunction () {
+
     //var checkBox = document.getElementById("myCheck1");
     //if (checkBox.checked == true){
         fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=dce7fdccb5fb4eb8a4541cbd46ac0c57&maxReadyTime=15&number=3")
@@ -26,19 +27,22 @@ function myFunction () {
                 firstCard.appendChild(a);
                 a.appendChild(article);
             })
-            
         })
     }
 //
 window.addEventListener("load",myFunction);
 */
 function myFunction () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=9b19014764264e228cd8cfd7de2b2457&number=20")
+
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=20")
+
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+
+        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
+
         .then(response => response.json())
         .then( recipe => { console.log(recipe)
             var fastestFood = document.getElementsByClassName("fastestFood")[0];
@@ -66,21 +70,22 @@ function myFunction () {
             a.appendChild(article);
             number = number +1;
            }
-
         })
     })
     })} 
 
 window.addEventListener("load",myFunction);
-
 function myFunction1 () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey=9b19014764264e228cd8cfd7de2b2457&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=20")
+
 .then(response => response.json())
 .then( data => {
         console.log(data)
     var number = 0;
     data.recipes.forEach( function (item) {
-    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+
+    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
+
     .then(response => response.json())
     .then( recipe => { 
         var easiestFood = document.getElementsByClassName("easiestFood")[0];
@@ -108,17 +113,17 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=9b19014764264e228cd8cfd
     })
 })
 })} 
-
 window.addEventListener("load",myFunction1);
-
-
 function myFunction2 () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey=9b19014764264e228cd8cfd7de2b2457&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=20")
+
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
-    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+
+    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
+
     .then(response => response.json())
     .then( recipe => { 
         var mostPopular = document.getElementsByClassName("mostPopular")[0];
@@ -146,13 +151,10 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=9b19014764264e228cd8cfd
     })
 })
 })} 
-
-
 window.addEventListener("load",myFunction2);
-
-
 function myFunction3 () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=9b19014764264e228cd8cfd7de2b2457&number=4")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=4")
+
     .then(response => response.json())
     .then( data => {
         console.log(data)
@@ -203,5 +205,3 @@ window.addEventListener("load",myFunction3);
         })
     })*/
 
-
-    
