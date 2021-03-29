@@ -32,24 +32,25 @@
 //
 window.addEventListener("load",myFunction);
 */
-
+var recipeData = {};
+var recipeArray = [];
 function myFunction () {
-
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=20")
-
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=caaf06b217bb42b8987e7cafc76673eb&number=20")
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=caaf06b217bb42b8987e7cafc76673eb")
         .then(response => response.json())
         .then( recipe => { 
+            var newObject = {};
             var fastestFood = document.getElementsByClassName("fastestFood")[0];
            if (recipe.readyInMinutes < 45 && number < 1 ) {
             var firstCard = document.createElement("div");
             firstCard.className = "card";
             var image = document.createElement("img")
             image.src = item.image;
+            newObject.image = item.image;
             image.className = "image11";
             var h = document.createElement("h1");
             h.innerHTML = item.title;
@@ -68,20 +69,32 @@ function myFunction () {
             fastestFood.appendChild(a);
             a.appendChild(article);
             number = number +1;
-           }
+            recipeArray.push(newObject);
+        }
         })
     })
     })} 
+    recipeData.recipes = recipeArray;
+
+
+fetch('http://localhost:3000/recipes', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify(recipeData)
+})
+.then(response => console.log(response))
+
 
 window.addEventListener("load",myFunction);
-function myFunction1 () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=20")
 
+/*
+function myFunction1 () {
+fetch("https://api.spoonacular.com/recipes/random?apiKey=5dc571ad8c4442e3be0ebea89c223437&number=20")
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
-    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=5dc571ad8c4442e3be0ebea89c223437")
     .then(response => response.json())
     .then( recipe => { 
         var easiestFood = document.getElementsByClassName("easiestFood")[0];
@@ -111,15 +124,13 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789b
 })} 
 window.addEventListener("load",myFunction1);
 function myFunction2 () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey=5dc571ad8c4442e3be0ebea89c223437&number=20")
 
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
-
-    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
-
+    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=5dc571ad8c4442e3be0ebea89c223437")
     .then(response => response.json())
     .then( recipe => { 
         var mostPopular = document.getElementsByClassName("mostPopular")[0];
@@ -149,8 +160,7 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789b
 })} 
 window.addEventListener("load",myFunction2);
 function myFunction3 () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=4")
-
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=5dc571ad8c4442e3be0ebea89c223437&number=4")
     .then(response => response.json())
     .then( data => {
         var number = 0;
@@ -181,7 +191,7 @@ function myFunction3 () {
     })}
 
 window.addEventListener("load",myFunction3);
-
+*/
 //function myFunction () {
 //var checkBox = document.getElementById("myCheck1");
 //if (checkBox.checked == true){
