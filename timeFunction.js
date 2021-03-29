@@ -1,7 +1,7 @@
 function myFunction () {
     //var checkBox = document.getElementById("myCheck1");
     //if (checkBox.checked == true){
-        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=9b19014764264e228cd8cfd7de2b2457&maxReadyTime=15&number=3")
+        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=6b45bdfff904492090397e2e31619b32&maxReadyTime=15&number=3")
         .then(response => response.json())
         .then( recipe => { 
                 console.log(recipe)
@@ -32,13 +32,13 @@ function myFunction () {
 window.addEventListener("load",myFunction);
 
 function myFunction1 () {
-        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=9b19014764264e228cd8cfd7de2b2457")
+        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=6b45bdfff904492090397e2e31619b32")
         .then(response => response.json())
         .then( data => {
                 console.log(data)
             var number = 0;
             data.results.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=6b45bdfff904492090397e2e31619b32")
             .then(response => response.json())
             .then( recipe => { 
                 console.log(recipe)
@@ -71,13 +71,13 @@ function myFunction1 () {
 window.addEventListener("load",myFunction1);
 
 function myFunction2 () {
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=9b19014764264e228cd8cfd7de2b2457")
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=6b45bdfff904492090397e2e31619b32")
     .then(response => response.json())
     .then( data => {
             console.log(data)
         var number = 0;
         data.results.forEach( function (item) {
-        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=9b19014764264e228cd8cfd7de2b2457")
+        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=6b45bdfff904492090397e2e31619b32")
         .then(response => response.json())
         .then( recipe => { 
             console.log(recipe)
