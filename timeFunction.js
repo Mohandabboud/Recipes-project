@@ -2,7 +2,7 @@
 function myFunction () {
     //var checkBox = document.getElementById("myCheck1");
     //if (checkBox.checked == true){
-        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=6b45bdfff904492090397e2e31619b32&maxReadyTime=15&number=3")
+        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&maxReadyTime=15&number=3")
         .then(response => response.json())
         .then( recipe => { 
                 console.log(recipe)
@@ -33,12 +33,12 @@ function myFunction () {
 window.addEventListener("load",myFunction);
 */
 function myFunction () {
-        fetch("https://api.spoonacular.com/recipes/random?apiKey=6b45bdfff904492090397e2e31619b32&number=20")
+        fetch("https://api.spoonacular.com/recipes/random?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&number=20")
         .then(response => response.json())
         .then( data => {
             var number = 0;
             data.recipes.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=6b45bdfff904492090397e2e31619b32")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e")
             .then(response => response.json())
             .then( recipe => { 
                 var fastestFood = document.getElementsByClassName("fastestFood")[0];
@@ -112,12 +112,12 @@ function myFunction1 () {
 window.addEventListener("load",myFunction1);
 
 function myFunction2 () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=6b45bdfff904492090397e2e31619b32&number=20")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&number=20")
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=6b45bdfff904492090397e2e31619b32")
+        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e")
         .then(response => response.json())
         .then( recipe => { 
             var mostPopular = document.getElementsByClassName("mostPopular")[0];
@@ -151,7 +151,7 @@ function myFunction2 () {
   
 
     function myFunction3 () {
-        fetch("https://api.spoonacular.com/recipes/random?apiKey=6b45bdfff904492090397e2e31619b32&number=4")
+        fetch("https://api.spoonacular.com/recipes/random?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&number=4")
         .then(response => response.json())
         .then( data => {
             console.log(data)
