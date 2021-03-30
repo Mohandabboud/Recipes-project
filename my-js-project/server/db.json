@@ -1,84 +1,12 @@
 {
-  "users": [
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    },
-    {
-      "id": 3,
-      "name": "Doe",
-      "age": 26
-    }
-  ],
+  "users": [],
   "recipes": [
     {
-      "recipes": []
-    },
-    {
-      "recipes": []
-    },
-    {
-      "recipes": []
-    },
-    {
-      "recipes": []
-    },
-    {
-      "recipes": []
-    },
-    {
-      "recipes": []
+      "title": "Easy butter chicken",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/butter-chicken-cf6f9e2.jpg?quality=90&webp=true&resize=375,341",
+      "description": "Fancy a healthy version of your favourite Friday night chicken curry? The chicken can be marinaded the day before so you can get ahead on your prep",
+      "ingredient": "500g skinless boneless chicken thighs\nFor the marinade\n1 lemon, juiced\n2 tsp ground cumin\n2 tsp paprika\n1-2 tsp hot chilli powder\n200g natural yogurt\nFor the curry\n2 tbsp vegetable oil\n1 large onion, chopped\n3 garlic cloves, crushed\n1 green chilli, deseeded and finely chopped (optional)\nthumb-sized piece ginger, grated\n1 tsp garam masala\n2 tsp ground fenugreek\n3 tbsp tomato purée\n300ml chicken stock\n50g flaked almonds, toasted\nTo serve (optional)\ncooked basmati rice\nnaan bread\nmango chutney or lime pickle\nfresh coriander\nlime wedges",
+      "steps": "STEP 1\nIn a medium bowl, mix all the marinade ingredients with some seasoning. Chop the chicken into bite-sized pieces and toss with the marinade. Cover and chill in the fridge for 1 hr or overnight.\n\nSTEP 2\nIn a large, heavy saucepan, heat the oil. Add the onion, garlic, green chilli, ginger and some seasoning. Fry on a medium heat for 10 mins or until soft.\n\nSTEP 3\nAdd the spices with the tomato purée, cook for a further 2 mins until fragrant, then add the stock and marinated chicken. Cook for 15 mins, then add any remaining marinade left in the bowl. Simmer for 5 mins, then sprinkle with the toasted almonds. Serve with rice, naan bread, chutney, coriander and lime wedges, if you like."
     }
   ]
 }

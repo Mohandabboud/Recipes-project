@@ -22,6 +22,12 @@ app.get('/users', (req, res) => {
     res.send(data)
    })
 
+   app.get('/recipes', (req, res) => {
+    const data = db.get('recipes') //we are reading the users
+    res.send(data)
+   })
+
+
 app.post('/recipes', (req, res) => {
 db.get('recipes')
     .push(req.body)
@@ -29,6 +35,12 @@ db.get('recipes')
 res.send('recipe created') //sending back a response
 })
 
+app.delete('/recipes/1', (req, res) => {
+  db.get('recipes')
+    .remove()
+    .write()
+  res.send('deleted!')
+ })
    // What happens when we call the api to post content
 app.post('/users', (req, res) => {
     db.get('users')
@@ -38,9 +50,10 @@ app.post('/users', (req, res) => {
    })
    
    // Remove a user
+
    app.delete('/users/1', (req, res) => {
     db.get('users')
-      .remove({ id: 1})
+      .remove()
       .write()
     res.send('deleted!')
    })
