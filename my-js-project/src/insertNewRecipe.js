@@ -1,30 +1,29 @@
-var ingredients = [];
+
+/*
+
+fetch('http://localhost:3000/recipes/1', {
+    method: 'DELETE',
+})
+.then(response => console.log(response))
+*/
+
+function addrecipe() {
 var recipe = {} ;
-recipe.title = ;
-recipe.discreption = ;
-function create () {
-    var body = document.querySelector("body");
-    var a = document.querySelector("#ingredient").value
-    var p = document.createElement("p")
-    p.innerHTML = a;
-    body.appendChild(p);
-    ingredients.push(a);
-    recipe.ingredients = ingredients;
+recipe.title = document.querySelector("#title").value;
+recipe.image = document.querySelector("#images").value;
+recipe.description = document.querySelector("#description").value;
+recipe.ingredient = document.querySelector("#ingredient").value;
+recipe.steps = document.querySelector("#steps").value;
+console.log(recipe);
+fetch('http://localhost:3000/recipes', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify(recipe)
+})
+.then(response => { console.log(response)
+                    console.log(recipe)
+})
 }
-
-var steps = [];
-function create1 () {
-    var body = document.querySelector("body");
-    var a = document.querySelector("#steps").value
-    var p = document.createElement("p")
-    p.innerHTML = a;
-    body.appendChild(p);
-    recipe.steps = steps;
-}
-
-var button = document.querySelector("#button");
-button.addEventListener("click",create);
-var button1 = document.querySelector("#button1");
-
-var button3 = document.querySelector("#button3");
-button3.addEventListener("click",create1);
+    
+var submit = document.querySelector("#submit");
+submit.addEventListener("click" , addrecipe)

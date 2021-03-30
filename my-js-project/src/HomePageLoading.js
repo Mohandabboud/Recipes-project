@@ -1,90 +1,98 @@
-
-/*function myFunction () {
+/*
+function myFunction () {
 
     //var checkBox = document.getElementById("myCheck1");
     //if (checkBox.checked == true){
-        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=dce7fdccb5fb4eb8a4541cbd46ac0c57&maxReadyTime=15&number=3")
+        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=bb65d8287d25452e88027fde505806be&maxReadyTime=15&number=3")
         .then(response => response.json())
         .then( recipe => { 
-                console.log(recipe)
                 var fastestFood = document.getElementsByClassName("fastestFood")[0];
                 recipe.results.forEach( function (item) {
-                var firstCard = document.createElement("div");
-                firstCard.className = "card";
-                var image = document.createElement("img")
-                image.src = item.image;
-                image.className = "image11";
-                var h = document.createElement("h1");
-                h.innerHTML = item.title;
-                var a = document.createElement("a");
-                a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
-                a.className = "link11"
-                var article = document.createElement("article");
-                article.className = "article";
-                fastestFood .appendChild(firstCard);
-                firstCard.appendChild(image);
-                article.appendChild(h);
-                firstCard.appendChild(a);
-                a.appendChild(article);
-            })
+                    var firstCard = document.createElement("div");
+                    firstCard.className = "card";
+                    var image = document.createElement("img")
+                    image.src = item.image;
+                    image.className = "image11";
+                    var h = document.createElement("h1");
+                    h.innerHTML = item.title;
+                    var a = document.createElement("a");
+                    a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
+                    a.className = "link11"
+                    var article = document.createElement("article");
+                    article.className = "article";
+                    fastestFood .appendChild(firstCard);
+                    firstCard.appendChild(image);
+                    article.appendChild(h);
+                    firstCard.appendChild(a);
+                    a.appendChild(article);
+                })
         })
-    }
-//
-window.addEventListener("load",myFunction);
+
+   }
+   */
+   /*
+   console.log(recipe)
+   var json = JSON.stringify(recipe)
+   console.log(recipe);
+   fetch('http://localhost:3000/recipes', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       body: json
+       })
+       .then(response =>  console.log(response))
+}) 
 */
+//
+//window.addEventListener("load",myFunction);
+
 var recipeData = {};
 var recipeArray = [];
 function myFunction () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=caaf06b217bb42b8987e7cafc76673eb&number=20")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=bb65d8287d25452e88027fde505806be&number=5")
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=caaf06b217bb42b8987e7cafc76673eb")
-        .then(response => response.json())
-        .then( recipe => { 
-            var newObject = {};
-            var fastestFood = document.getElementsByClassName("fastestFood")[0];
-           if (recipe.readyInMinutes < 45 && number < 1 ) {
-            var firstCard = document.createElement("div");
-            firstCard.className = "card";
-            var image = document.createElement("img")
-            image.src = item.image;
-            newObject.image = item.image;
-            image.className = "image11";
-            var h = document.createElement("h1");
-            h.innerHTML = item.title;
-            var p = document.createElement("p");
-            p.className = "pargraph"
-            p.innerHTML = recipe.summary;
-            var a = document.createElement("a");
-            a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
-            a.className = "link11"
-            var article = document.createElement("article");
-            article.className = "article";
-            fastestFood.appendChild(firstCard);
-            firstCard.appendChild(image);
-            firstCard.appendChild(p);
-            article.appendChild(h);
-            fastestFood.appendChild(a);
-            a.appendChild(article);
-            number = number +1;
-            recipeArray.push(newObject);
-        }
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=144b024c11254237bd7586886f98dfec")
+            .then(response => response.json())
+            .then( recipe => { 
+                var newObject = {};
+                var fastestFood = document.getElementsByClassName("fastestFood")[0];
+                if (recipe.readyInMinutes < 45 && number < 1 ) {
+                    var firstCard = document.createElement("div");
+                    firstCard.className = "card";
+                    var image = document.createElement("img")
+                    image.src = item.image;
+                    newObject.image = item.image;
+                    image.className = "image11";
+                    var h = document.createElement("h1");
+                    h.innerHTML = item.title;
+                    newObject.title = item.title;
+                    var p = document.createElement("p");
+                    p.className = "pargraph"
+                    p.innerHTML = recipe.summary;
+                    var a = document.createElement("a");
+                    a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
+                    a.className = "link11"
+                    var article = document.createElement("article");
+                    article.className = "article";
+                    fastestFood.appendChild(firstCard);
+                    firstCard.appendChild(image);
+                    firstCard.appendChild(p);
+                    article.appendChild(h);
+                    fastestFood.appendChild(a);
+                    a.appendChild(article);
+                    number = number +1;
+                    recipeArray.push(newObject);
+                    console.log(recipeArray);
+                }
+            }) 
+            console.log(recipeArray);
         })
+        console.log(recipeArray);
     })
-    })} 
-    recipeData.recipes = recipeArray;
 
-
-fetch('http://localhost:3000/recipes', {
-method: 'POST',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify(recipeData)
-})
-.then(response => console.log(response))
-
-
+}
 window.addEventListener("load",myFunction);
 
 /*
@@ -107,7 +115,7 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=5dc571ad8c4442e3be0ebea
         var h = document.createElement("h1");
         h.innerHTML = item.title;
         var a = document.createElement("a");
-        a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
+        a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
         a.className = "link11"
         var article = document.createElement("article");
         article.className = "article";
@@ -143,7 +151,7 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=5dc571ad8c4442e3be0ebea
         var h = document.createElement("h1");
         h.innerHTML = item.title;
         var a = document.createElement("a");
-        a.href = "http://127.0.0.1:8000/description2.html?search="+item.id;
+        a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
         a.className = "link11"
         var article = document.createElement("article");
         article.className = "article";
@@ -176,7 +184,7 @@ function myFunction3 () {
         var h = document.createElement("h2");
         h.innerHTML = data.recipes[number].title;
         var a = document.createElement("a");
-        a.href = "http://127.0.0.1:8000/description2.html?search="+data.recipes[number].id;
+        a.href = "http://127.0.0.1:8000/description.html?search="+data.recipes[number].id;
         a.className = "link11"
         var article = document.createElement("article");
         article.className = "article";
@@ -208,5 +216,6 @@ window.addEventListener("load",myFunction3);
 
         })
         })
-    })*/
-
+    })
+    
+*/
