@@ -35,13 +35,13 @@ window.addEventListener("load",myFunction);
 
 function myFunction () {
 
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=20")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=20")
 
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+        fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
         .then(response => response.json())
         .then( recipe => { 
             var fastestFood = document.getElementsByClassName("fastestFood")[0];
@@ -50,7 +50,7 @@ function myFunction () {
             firstCard.className = "card";
             var image = document.createElement("img")
             image.src = item.image;
-            image.className = "image11";
+            image.className = "image10";
             var h = document.createElement("h1");
             h.innerHTML = item.title;
             var p = document.createElement("p");
@@ -75,13 +75,13 @@ function myFunction () {
 
 window.addEventListener("load",myFunction);
 function myFunction1 () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=20")
 
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
-    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
     .then(response => response.json())
     .then( recipe => { 
         var easiestFood = document.getElementsByClassName("easiestFood")[0];
@@ -111,14 +111,14 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789b
 })} 
 window.addEventListener("load",myFunction1);
 function myFunction2 () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=20")
 
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
 
-    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=780aeeca39d34a1bab3789be644f5daf")
+    fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=324371cd58984b4f8b37347fb5bf8e1b")
 
     .then(response => response.json())
     .then( recipe => { 
@@ -149,13 +149,10 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789b
 })} 
 window.addEventListener("load",myFunction2);
 function myFunction3 () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey=780aeeca39d34a1bab3789be644f5daf&number=4")
-
+    fetch("https://api.spoonacular.com/recipes/random?apiKey=324371cd58984b4f8b37347fb5bf8e1b&number=4")
     .then(response => response.json())
     .then( data => {
         var number = 0;
-        var h1 = document.createElement("h1");
-        h1.innerHTML = "Recommended Meals for you to try";
         var container = document.getElementsByClassName("flex-container")[1];
         data.recipes.forEach( function (item) {
         var firstCard = document.createElement("div");
@@ -172,7 +169,6 @@ function myFunction3 () {
         article.className = "article";
         container.appendChild(firstCard);
         firstCard.appendChild(image);
-        container.appendChild(h1);
         article.appendChild(h);
         firstCard.appendChild(a);
         a.appendChild(article);
