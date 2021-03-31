@@ -52,6 +52,7 @@ function myFunction () {
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
+
             fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=240f675c9ad44d34a96f35d6cb97542d")
             .then(response => response.json())
             .then( recipe => { 
@@ -93,6 +94,7 @@ window.addEventListener("load",myFunction);
 
 
 function myFunction1 () {
+
 fetch("https://api.spoonacular.com/recipes/random?apiKey=240f675c9ad44d34a96f35d6cb97542d&number=20")
 .then(response => response.json())
 .then( data => {
@@ -129,11 +131,13 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=240f675c9ad44d34a96f35d
 window.addEventListener("load",myFunction1);
 
 function myFunction2 () {
+
 fetch("https://api.spoonacular.com/recipes/random?apiKey=240f675c9ad44d34a96f35d6cb97542d&number=20")
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
+
     fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=240f675c9ad44d34a96f35d6cb97542d")
     .then(response => response.json())
     .then( recipe => { 
@@ -165,6 +169,7 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=240f675c9ad44d34a96f35d
 window.addEventListener("load",myFunction2);
 
 function myFunction3 () {
+
     fetch("https://api.spoonacular.com/recipes/random?apiKey=240f675c9ad44d34a96f35d6cb97542d&number=4")
     .then(response => response.json())
     .then( data => {
