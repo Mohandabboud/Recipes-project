@@ -1,13 +1,13 @@
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("search");
 
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=63aa9e92f55343b2a5248169d8c9971f&includeIngredients="+myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=a94bcae204f34abfb4c703ed54ffa5a0&includeIngredients="+myParam)
 
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=63aa9e92f55343b2a5248169d8c9971f")
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=a94bcae204f34abfb4c703ed54ffa5a0")
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 var card = document.createElement("div");
