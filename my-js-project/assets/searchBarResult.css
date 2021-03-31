@@ -1,6 +1,6 @@
 
 .table {
-  width: 100%;
+  width: 70%;
   max-width: 1240px;
   margin: 0 auto;
   
@@ -14,7 +14,7 @@
 }
 .card {
     
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px rgb(182, 181, 181);
     transition: 0.3s;
     width: 100%;
     border: 2px solid #e7e7e7;
@@ -29,21 +29,27 @@
   
   
   .container {
-    padding: 2px 16px;
+    padding: 0px 16px;
   }
-
-.image11{
-    max-width: 100%;
+.search-Text{
+  position: absolute;
+  left: 225px;
+  top: 13.5%;
+}
+.image01{
+  width: 335px;
+  display: flex;
+  justify-content: center;
 }
 
 h1{
   font-family: serif;
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 10px
 }
 .result-text{
   font-family: serif;
-  font-size: 15px;
+  font-size: 17px;
   margin: 14px;
   padding-bottom: -45px;
 

@@ -14,7 +14,7 @@ function timeFunction6 () {
                 container.className = "container";
                 var image = document.createElement("img")
                 image.src = recipe.image;
-                image.className = "image11";
+                image.className = "image01";
                 var h = document.createElement("h1");
                 h.innerHTML = recipe.title;
                 var p = document.createElement("p");

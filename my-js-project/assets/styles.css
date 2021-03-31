@@ -1,8 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     outline: none;
-    font-family: sans-serif;
+    font-family: raleway;
 }
 body{
     min-height: 100vh;
@@ -61,26 +64,35 @@ nav .nav-items li a{
     padding-left: 170px;
     padding-top: 50px;
     font-size: 25px;
+    font-family: raleway;
 }
 .checkbox{
     padding-right: 15px;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: raleway;
     float: right;
+    padding-top: 8px;
 }
 #checkbox-text1{
-    float: right;
+    position: absolute;
+    top: 11%;
+    right: 15px;
     padding: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-family: raleway;
 }
 .checkbox button{
     font-family: sans-serif;
-    padding-right: 10px;
-    background: #01A3A4;
+    position: absolute;
+    top: 24%;
+    right: 60px;
+    background: #87C3BD;
     color: whitesmoke;
     font-size: 15px;
     padding: 5px 5px;
-    font-family: serif;
-    border-radius: 8px;
+    font-family: raleway;
+    border-radius: 4px;
     float: right;
 }
 .flex-container {
@@ -89,14 +101,21 @@ nav .nav-items li a{
     flex-wrap: wrap;
     padding-left: 0px;
     padding-bottom: 50px;
+    font-family: raleway;
   }
   .flex-container > div {
     margin-left: 25px;
     margin-right: 25px;
     padding: 0px;
     font-size: 30px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 2px 2px 2px 2px rgb(170, 169, 169);
     padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 2px;
+    font-family: raleway;
+  }
+  .flex-container > div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   .text1 p {
     margin:0;
@@ -105,9 +124,14 @@ nav .nav-items li a{
     font-size: 25px;
     display: inline-block;
     line-height: 40px;
+    font-family: raleway;
+}
+.text2{
+    font-family: raleway;
 }
 #text3 {
    float: right;
+   font-family: raleway;
 }
 .search-box{
     position: absolute;
@@ -154,6 +178,7 @@ nav .nav-items li a{
     justify-content: center;
     flex-wrap: wrap;
     float: right;
+    font-family: raleway;
   }
 .fastestFood{
     width: 35%;
@@ -162,6 +187,7 @@ nav .nav-items li a{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: -45px;
+    font-family: raleway;
   }
 .mostPopular{
     width: 17%;
@@ -170,12 +196,13 @@ nav .nav-items li a{
     justify-content: center;
     flex-wrap: wrap; 
     float: left;
+    font-family: raleway;
   }
  .article{
      font-size: 8px;
      text-decoration: none;
      display: inline-block;
-    font: sans-serif;
+    font-family: raleway;
     padding-bottom: 20px;
     padding-left: 5px;
     color: rgb(32, 30, 30);
@@ -200,11 +227,12 @@ nav .nav-items li a{
     padding: 5px;
     text-decoration: none;
     display: inline-block;
-   font: sans-serif;
+    font-family: raleway;
    padding-bottom: 20px;
    padding-left: 5px;
    color: rgb(32, 30, 30);
 }
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 .day-meals{
     position: absolute;
@@ -212,6 +240,7 @@ nav .nav-items li a{
     right: 500px;
     padding-bottom: 50px;
     margin-bottom: 50px;
+    font-family: raleway;
 }
 /* New search bar for main page */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
@@ -221,7 +250,7 @@ nav .nav-items li a{
 	padding: 0;
 	outline: none;
 	box-sizing: border-box;
-	font-family: 'Comfortaa', cursive;
+	font-family: raleway;
 }
 
 body{
@@ -262,6 +291,43 @@ body{
 }
 
 .btn1 .fas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+/* search bar for reasult page */
+.search-box2{
+    position: absolute;
+    top: 5.3%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0,0.6);
+    max-width: 350px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.search-box2 .input-box2 {
+    width: 85%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn2 {
+    background: #87C3BD;
+    width: 12%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn2 .fas{
 	position: absolute;
     top: 50%;
     left: 50%;

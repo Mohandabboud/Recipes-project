@@ -1,9 +1,9 @@
 function timeFunction5 () {
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=63aa9e92f55343b2a5248169d8c9971f&maxReadyTime=45&number=10")
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=5dc571ad8c4442e3be0ebea89c223437&maxReadyTime=45&number=10")
     .then(response => response.json())
     .then( data => { 
         data.results.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=63aa9e92f55343b2a5248169d8c9971f")
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=5dc571ad8c4442e3be0ebea89c223437")
             .then(response => response.json())
             .then( recipe => { 
                 var card = document.createElement("div");
@@ -12,7 +12,7 @@ function timeFunction5 () {
                 container.className = "container";
                 var image = document.createElement("img")
                 image.src = recipe.image;
-                image.className = "image11";
+                image.className = "image01";
                 var h = document.createElement("h1");
                 h.innerHTML = recipe.title;
                 var p = document.createElement("p");
