@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("search");
-fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=a94bcae204f34abfb4c703ed54ffa5a0")
+
+fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=144b024c11254237bd7586886f98dfec")
             .then(response => response.json())
             .then( recipe => { 
                 var result = document.getElementsByClassName("result11")[0];
@@ -26,6 +27,11 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=a94
                 ingredient.className = "ingredient";
                 var directions = document.createElement("div");
                 directions.className = "directions"
+                var h2 = document.createElement("h2");
+                var br = document.createElement("br");
+                h2.innerHTML = "Ingredients";
+                ingredient.appendChild(h2);
+                ingredient.appendChild(br);
                 recipe.extendedIngredients.forEach( function (item) {
                     console.log(item.originalString)
                     var p2 = document.createElement("p");
@@ -34,7 +40,11 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=a94
                     ingredient.appendChild(p2);
     
                 })
-                recipe.analyzedInstructions[0].steps.forEach( function (item) {
+                    var h3 = document.createElement("h2");
+                    h3.innerHTML = "Directions";
+                    directions.appendChild(h3);
+                    directions.appendChild(br);
+                    recipe.analyzedInstructions[0].steps.forEach( function (item) {
                     var p1 = document.createElement("p");
                     console.log(item.step)
                     p1.innerHTML = item.step;

@@ -13,18 +13,18 @@ function getRecipes() {
             var card = document.createElement("div");
             card.className="card";
             //var container = document.createElement(".container");
-            card.className = "card";
+            //card.className = "card";
             //container.className = "container";
             var image = document.createElement("img")
             image.src = item.image;
             image.className = "image11";
             var h = document.createElement("h1");
             h.innerHTML = item.title;
-            var p = document.createElement("p");
-            p.className = "result-text";
-            p.innerHTML = item.description;
+            //var p = document.createElement("p");
+            //p.className = "result-text";
+            //p.innerHTML = item.description;
             var a = document.createElement("a");
-            a.href = "http://127.0.0.1:8000/descriptionNewRecipe.html?search="+item.id;
+            a.href = "http://127.0.0.1:8000/descriptionInsertedRecipes.html?title="+item.title+"&description="+item.description+"&image="+item.image+"&ingredient="+item.ingredient+"&steps="+item.steps;
             a.className = "link11"
             var button = document.createElement("button");
             button.innerHTML = "click here";
@@ -35,7 +35,7 @@ function getRecipes() {
             card.appendChild(image);
             //card.appendChild(container);
             article.appendChild(h);
-            article.appendChild(p);
+           // article.appendChild(p);
             card.appendChild(a);
             //container.appendChild(button);
             a.appendChild(article);
