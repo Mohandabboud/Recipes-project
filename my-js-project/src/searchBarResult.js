@@ -1,16 +1,25 @@
-   var array = [];
-   var number = 0;
+//var firstAPI = "8a07d27c762a4515b4eb63220b517e02";
+var secondAPI = "240f675c9ad44d34a96f35d6cb97542d";
+//var thirdAPI = "1c3d08b06c8e4d0189ef89e62b169eba";
+var fourthAPI = "caaf06b217bb42b8987e7cafc76673eb";
+var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
+var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
+var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
+var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var array = [];
+var number = 0;
    
    const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("search");
 
 
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&includeIngredients="+myParam)
+
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ secondAPI +"&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e")
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + secondAPI)
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 array[number] = recipe;

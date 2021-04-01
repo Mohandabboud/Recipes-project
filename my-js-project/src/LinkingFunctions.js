@@ -9,19 +9,19 @@ console.log(url)
 }
 
 
-function timeFunction1() {
+function timeFunction30Mins() {
     var url = new URL("http://127.0.0.1:8000/checkBox30MinResult.html")
     var b = document.querySelector("#myForm")
     b.action = url;
 }
 
-function timeFunction2() {
+function timeFunction45Mins() {
     var url = new URL("http://127.0.0.1:8000/checkBox45MinResult.html")
     var b = document.querySelector("#myForm")
     b.action = url;
 }
 
-function timeFunction3() {
+function timeFunction60Mins() {
     var url = new URL("http://127.0.0.1:8000/checkBox60MinResult.html")
     var b = document.querySelector("#myForm")
     b.action = url;

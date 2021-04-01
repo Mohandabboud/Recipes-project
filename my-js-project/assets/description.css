@@ -88,50 +88,33 @@
 .estimated-time{
     font-family: raleway;
     font-size: 20px;
-    position: absolute;
-    right: 180px;
-    top: 16%;
-} */
-.result{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    padding-bottom: 50px;
-    font-family: raleway;
-    padding-top: 50px;
+
 }
 
-.result > div {
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 0px;
-    font-size: 30px;
-    padding-top: 10px;
-    border-radius: 4px;
-    padding-bottom: 2px;
-    font-family: raleway;
-  }
-  .recipe{
-    width: 35%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: raleway;
-  }
-.resultImage{
-    width: 532px;
-    display: flex;
-    justify-content: center;
+.resultImage {
+    grid-area: resultImage;
 }
-.description{
- width: 550px;
- font-size: 15px;
- padding: 5px;
- text-decoration: none;
- display: inline-block;
- font-family: raleway;
- padding-bottom: 20px;
- padding-left: 5px;
- margin-bottom: 10px;
+
+.description {
+    grid-area: description;
+}
+
+.box {
+    grid-area: box;
+}
+
+.instructions {
+    grid-area: instructions;
+}
+
+.recipe {
+    grid-area: recipe;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "recipe box" ;
+
 }
