@@ -10,6 +10,11 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=de5
                 var image = document.createElement("img");
                 image.className = "resultImage"
                 image.src = recipe.image;
+                var card2 = document.createElement("div");
+                var p2 = document.createElement("p");
+                var p3 = document.createElement("p");
+                p2.innerHTML = "Estimated time: " + recipe.readyInMinutes +" mins" ;
+                p3.innerHTML = "Servings: " + recipe.servings ;  
                 var h = document.createElement("h1");
                 h.className = "recipeTitle"
                 h.innerHTML = recipe.title;
@@ -21,8 +26,12 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=de5
                 imageText.appendChild(image);
                 imageText.appendChild(h);
                 imageText.appendChild(p);
+                result.appendChild(card2);
+                card2.appendChild(p2);
+                card2.appendChild(p3);
                 console.log(recipe.aggregateLikes)
                 console.log(recipe.readyInMinutes)
+                console.log(recipe.servings)
                 var ingredient = document.createElement("div");
                 ingredient.className = "ingredient";
                 var directions = document.createElement("div");
