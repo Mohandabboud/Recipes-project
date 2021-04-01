@@ -7,6 +7,8 @@ var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
 
+
+
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("search");
 var instruction = [];
@@ -100,7 +102,6 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ 
                     p2.innerHTML= item.originalString;
                     result.appendChild(ingredient);
                     ingredient.appendChild(p2);
-    
                 })
                     var h3 = document.createElement("h2");
                     h3.innerHTML = "Directions";
@@ -116,3 +117,4 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ 
 
             })
 */
+

@@ -13,6 +13,7 @@ var number = 0;
     const myParam = urlParams.get("search");
 
 
+
     fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ secondAPI +"&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
@@ -194,7 +195,7 @@ var number = 0;
         if (checkBox3.checked == true) {}
     }
     */
-    var button1 = document.querySelector(".checkbox-button");
+    var button1 = document.querySelector("#button1");
     button1.addEventListener("click" , thirtyMins);
     button1.addEventListener("click" , fortyFiveMins);
     button1.addEventListener("click" , sixtyMins);

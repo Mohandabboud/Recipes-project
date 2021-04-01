@@ -1,4 +1,13 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: raleway;
+}
+body{
+  min-height: 100vh;
+}
 .table {
   width: 70%;
   max-width: 1240px;
@@ -33,9 +42,23 @@
   }
 .search-Text{
   position: absolute;
-  left: 225px;
+  left: 150px;
   top: 13.5%;
 }
+.checkbox-button1{
+  font-family: sans-serif;
+  position: absolute;
+  top: 80%;
+  right: 60px;
+  background: #87C3BD;
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 5px 5px;
+  font-family: raleway;
+  border-radius: 4px;
+  float: right;
+}
+
 .image01{
   width: 335px;
   display: flex;

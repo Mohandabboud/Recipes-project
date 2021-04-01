@@ -94,6 +94,11 @@ nav .nav-items li a{
     border-radius: 4px;
     float: right;
 }
+#button1{
+    position: absolute;
+    top: 25%;
+  }
+  
 .flex-container {
     display: flex;
     justify-content: center;
