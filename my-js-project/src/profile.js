@@ -5,7 +5,7 @@ function getRecipes() {
         .then(response =>  response.json())
         .then( recipes => {
             console.log(recipes)
-            var grid = document.querySelector(".grid");
+            //var grid = document.querySelector(".grid");
             var cards = document.querySelector(".cards");
             recipes.forEach( function(item) {
             //var title = item.title;
@@ -17,8 +17,9 @@ function getRecipes() {
             //container.className = "container";
             var image = document.createElement("img")
             image.src = item.image;
-            image.className = "image11";
+            image.className = "image1";
             var h = document.createElement("h1");
+            h.className= "imagetitle"
             h.innerHTML = item.title;
             //var p = document.createElement("p");
             //p.className = "result-text";
