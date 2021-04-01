@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap');
-.result11 {
-    
+*{
+    font-family: raleway;
+    padding: 0;
+    margin: 0;
 }
+.result11 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    font-family: raleway;
+    padding-top: 40px;
+  }
 
 .imageText {
-    padding-top: 2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 
 .resultImage{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
-    border-radius: 5px;
-    margin-left: 2%;
+    width: 750px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -21,24 +31,46 @@
     font-family: raleway;
 }
 
-.pargraph {
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 150%;
-    margin-left: 1%;
-
+.pargraph  {
+ width: 750px;
+ font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: raleway;
+   padding-bottom: 20px;
+   padding-left: 5px;
+   color: rgb(32, 30, 30);
+   list-style-type: circle;
 }
 
 .ingredient {
-    margin-left:2%;
-    padding: 2%;
-    font-size: 150%;
-
-
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    top: 150px;
+    right: 47px;
+    padding: 5px 5px 0 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: raleway;
+   padding-bottom: 20px;
+   padding-left: 5px;
+   border: 1px solid rgb(33, 36, 33);
+   list-style-type: circle;
+   list-style-type: space-counter;
+   line-height: 1.3;
+   counter-reset: line;
 }
 
 .directions {
     font-size:180%;
     margin-left: 1%;
 
+}
+.cook-ican{
+    position: absolute;
+    top: 155px;
+    right: 60px;
+    font-size: 20px;
 }
