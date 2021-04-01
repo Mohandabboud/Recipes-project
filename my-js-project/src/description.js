@@ -1,7 +1,59 @@
+//var firstAPI = "8a07d27c762a4515b4eb63220b517e02";
+var secondAPI = "240f675c9ad44d34a96f35d6cb97542d";
+//var thirdAPI = "1c3d08b06c8e4d0189ef89e62b169eba";
+var fourthAPI = "caaf06b217bb42b8987e7cafc76673eb";
+var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
+var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
+var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
+var eighthAPI = "144b024c11254237bd7586886f98dfec";
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("search");
-
-fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=de531017b1814de68ac13fbd3f9bf858")
+var instruction = [];
+var ingredient = [];
+fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ eighthAPI)
+.then(response => response.json())
+.then( recipe => {
+    console.log(recipe)
+                var result = document.querySelector(".result");
+                console.log(result)
+                //var recipes = document.querySelector(".recipe")[0];
+                var description = document.querySelector(".description");
+                console.log(description)
+                var image = document.querySelector(".resultImage");
+                console.log(image)
+                var recipeTime = document.querySelector(".recipe-time");
+                console.log(recipeTime)
+                var servings = document.querySelector(".servings");
+                console.log(servings)
+                var ingredients = document.querySelector(".ingredients");
+                console.log(ingredients)
+                var instructions = document.querySelector(".instructions");
+                console.log(instructions)
+                image.src = recipe.image;
+                description.innerHTML = recipe.summary;
+                recipeTime.innerHTML = "Estimated time: " + recipe.readyInMinutes +" mins";
+                servings.innerHTML = "Servings: " + recipe.servings;
+                var number = 1;
+                recipe.extendedIngredients.forEach( function (item) {
+                var p1 = document.createElement("p");
+                //instruction[number] = item.originalString;
+                p1.innerHTML = number +") " + item.originalString;
+                ingredients.appendChild(p1)
+                number = number + 1;
+                })
+               // ingredients.innerHTML = instruction;   
+                var number = 1;
+                recipe.analyzedInstructions[0].steps.forEach( function (item) {
+                var p = document.createElement("p");
+                p.innerHTML = number +") " + item.step
+                //instruction[number] = item.step;
+                number = number + 1;
+                instructions.appendChild(p)
+            })
+           //instructions.innerHTML = instruction
+})
+/*
+fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ fourthAPI)
             .then(response => response.json())
             .then( recipe => { 
                 var result = document.getElementsByClassName("result11")[0];
@@ -14,10 +66,7 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=de5
                 var p2 = document.createElement("p");
                 var p3 = document.createElement("p");
                 p2.innerHTML = "Estimated time: " + recipe.readyInMinutes +" mins" ;
-                p3.innerHTML = "Servings: " + recipe.servings ; 
-                card2.className = "estimated-time"
-                p2.className = "time";
-                p3.className = "time";
+                p3.innerHTML = "Servings: " + recipe.servings ;  
                 var h = document.createElement("h1");
                 h.className = "recipeTitle"
                 h.innerHTML = recipe.title;
@@ -50,7 +99,6 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=de5
                     p2.innerHTML= item.originalString;
                     result.appendChild(ingredient);
                     ingredient.appendChild(p2);
-    
                 })
                     var h3 = document.createElement("h2");
                     h3.innerHTML = "Directions";
@@ -63,5 +111,5 @@ fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey=de5
                     result.appendChild(directions);
                     directions.appendChild(p1);
             })
-
             })
+*/
