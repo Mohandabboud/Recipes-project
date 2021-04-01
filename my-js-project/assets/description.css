@@ -74,3 +74,30 @@
     right: 60px;
     font-size: 20px;
 }
+
+.resultImage {
+    grid-area: resultImage;
+}
+
+.description {
+    grid-area: description;
+}
+
+.box {
+    grid-area: box;
+}
+
+.instructions {
+    grid-area: instructions;
+}
+
+.recipe {
+    grid-area: recipe;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "recipe box" ;
+}

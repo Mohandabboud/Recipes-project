@@ -44,7 +44,7 @@ function myFunction () {
 */
 //
 //window.addEventListener("load",myFunction);
-
+/*
 //var firstAPI = "8a07d27c762a4515b4eb63220b517e02";
 var secondAPI = "240f675c9ad44d34a96f35d6cb97542d";
 //var thirdAPI = "1c3d08b06c8e4d0189ef89e62b169eba";
@@ -205,7 +205,7 @@ function random () {
     })}
 
 window.addEventListener("load",random);
-
+*/
 //function myFunction () {
 //var checkBox = document.getElementById("myCheck1");
 //if (checkBox.checked == true){
