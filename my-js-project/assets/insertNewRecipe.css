@@ -1,0 +1,71 @@
+
+
+form {
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.instruction{
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px; 
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img-insert {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descript {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+textarea {
+    background-color: rgb(210, 217, 224);
+    border: none;
+    box-shadow: 5px 5px 9px rgba(0,0,0,0.25);
+}
+
+input {
+    font-size: larger;
+}
+
+
+.btn-recipe {
+    border-radius: 3px;
+    height: 35px;
+    padding: 5px;
+    box-shadow: 5px 5px 9px rgba(0,0,0,0.25);
+    margin-left: 20px;
+    background-color: white;
+    border: 2px solid #01A3A4;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-recipe:hover {
+    background-color: #01A3A4;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-profile {
+    border-radius: 3px;
+    height: 35px;
+    padding: 5px;
+    box-shadow: 5px 5px 9px rgba(0,0,0,0.25);
+    margin-left: 8px;
+    background-color: white;
+    border: 2px solid #01A3A4;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-profile:hover {
+    background-color: #01A3A4;
+    color: white;
+    cursor: pointer;
+}
