@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/profile.css">
-    <link rel="stylesheet" href="/assets/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/profile.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <nav>
     <div class="logo" id="logo">
@@ -17,90 +21,93 @@
     <div class="name-logo" id="name-logo">
       <img src="/assets/images/webName.png">
     </div>
-    <div class="search-box">
-      <input id="input" class="input-box" type="text" name="" placeholder="Search">
-      <a class="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
-    </div> 
+
     <div class="nav-items">
       <li><a href="#"> Stanley</a></li>
     </div>
   </nav>
-  <div class="flex_con">
-    <div class="shared">
-        <h3>your shared food</h3>
-    </div>
-    
+
+
   </div>
-  <div class="containerB">
-      <div class="profile">
-          <h1>personal profile</h1>
-          <img class="profileimage" src="https://thumbs.dreamstime.com/b/happy-black-man-earphones-listening-to-music-dancing-baking-kitchen-119330863.jpg" alt="profile picture" style="width: 200px; height: 300px;">
-          <div class="container">
-              <h2>Basic info</h2> 
-              <p>Name: stanley</p>
-              <p>Nickname: leaner</p>
-              <p>Nationality: nigeria</p>
-          </div>
-      </div>
-      <div class="cards">
-        
+  <div class="container-personalpage">
+    <div class="profile">
+      <h1>personal profile</h1>
+      <img class="profileimage"
+        src="https://thumbs.dreamstime.com/b/happy-black-man-earphones-listening-to-music-dancing-baking-kitchen-119330863.jpg"
+        alt="profile picture">
+      <div class="container">
+        <h2>Basic Info</h2>
+        <p>Name: <strong>Stanley</strong></p>
+        <p>Nickname: <strong>ChefStanley</strong> </p>
+        <p>Nationality: <strong> Nigeria</strong></p>
+        <h2>About'''</h2>
+        <p>I am an expert in Italian cuisines,I combines my Nigerian roots with my acquired Italian culinary skills to
+          create exquisite dishes. <br>I attended the Le Cordon Bleu Firenze and Carpiagiani University,
+          Bologna. <br> Here, I gained expertise in the art of cookery.</p>
+        <div class="btt">
+          <button class="buttonrecipe"><a onClick="location.href='insertNewRecipe.html'">insert new recipe</a></button>
+        </div>
       </div>
     </div>
-    <div>
-      <button class="buttonrecipe"><a onClick="location.href='insertNewRecipe.html'">insert new recipe</a></button>
+    <div class="shared">
+      <h3>My shared food</h3>
+      <div class="cards"></div>
     </div>
-    <footer class="footer-distributed">
+  </div>
+  <footer class="footer-distributed">
 
-      <div class="footer-left">
+    <div class="footer-left">
 
-        <h3>Food Made<span>Easy</span></h3>
+      <h3>Food Made<span>Easy</span></h3>
 
-        <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </p>
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </p>
 
-        <p class="footer-company-name">FOOD MADE EASY © 2021</p>
+      <p class="footer-company-name">FOOD MADE EASY © 2021</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Viale Kennedy, N703. Ivrea</span> Torino, Italy</p>
       </div>
 
-      <div class="footer-center">
-
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Viale Kennedy, N703. Ivrea</span> Torino, Italy</p>
-        </div>
-
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+39.555.555.5555</p>
-        </div>
-
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@foodmadeeasy.com</a></p>
-        </div>
-
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+39.555.555.5555</p>
       </div>
 
-      <div class="footer-right">
-      
-        <p class="footer-company-about">
-          <span>About the Website</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula
-          sit amet.
-        </p>
-      
-        <div class="footer-icons">
-      
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube-square"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-      
-        </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@foodmadeeasy.com</a></p>
       </div>
-      <script src="/src/profile.js"></script>
-    
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the Website</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+        vehicula
+        sit amet.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube-square"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+      </div>
+    </div>
+    <script src="/src/profile.js"></script>
+
 </body>
+
 </html>
