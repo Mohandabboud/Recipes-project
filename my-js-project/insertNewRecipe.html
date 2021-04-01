@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/insertNewRecipe.css">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
-<body>
+<div class="body">
   <nav>
     <div class="logo" id="logo">
       <img src="/assets/images/logo new.png">
@@ -26,25 +27,25 @@
     </div>
   </nav>
     <h1>Welcome to your personal page</h1>
-    <p>Here you can insert your own created recipes or optimized one and share it with the other users</p>
-    <p>It will get reviewd so make sure to put your touch and make it delicious</p>
+    <br>
+      <p class="instruction">Here you can insert your own created recipes or optimized one and share it with the other users,</p>
+      <p class="instruction">It will get reviewed so make sure to put your touch and make it delicious.</p>
+    <br>
      <form >
-        <label for="fname">Add a title:</label>
+        <label class="title" for="fname">Add a title:</label>
         <input type="text" id="title" name="title"><br><br>
-        <label for="fname">Add an image:</label>
+        <label class="img-insert" for="fname">Add an image url link:</label>
         <input type="text" id="images" name="title"><br><br>
-        <label for="fname">Add a description:</label><br><br>
-        <textarea rows = "5" cols = "60" name = "description" id="description"></textarea><br><br>
-        <p>Please put your ingredients below one by one</p>
-        <p>After putting the first ingredients press the button then put the second and so on</p>
+        <label class="descript" for="fname">Add a description:</label><br><br>
+        <textarea rows = "5" cols = "60" name= "description" id="description"></textarea><br><br>
+        <p class="instruction">Please put your ingredients below one by one:</p><br>
         <textarea rows = "5" cols = "60" name = "description" id="ingredient"></textarea><br><br>
-        <p>In this section, you need to provide a well-explained instruction for the users</p>
-        <p>Do as you did above but this time provide instructions for every step</p>
+        <p class="instruction">In this section, you need to provide a well-explained instruction for the users:</p><br>
         <textarea rows = "5" cols = "60" name = "description" id="steps"></textarea><br><br>
         
     </form> 
-    <button  id="submit" >Add the recipe</button>
-    <button onclick="location.href='profile.html'">Go to your profile</button>
+    <button class="btn-recipe" id="submit" >Add the recipe</button>
+    <button class="btn-profile" onclick="location.href='profile.html'">Go to your profile</button>
     <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -98,5 +99,5 @@
         </div>  
     
     <script src="/src/insertNewRecipe.js"></script>
-</body>
+</div>
 </html>
