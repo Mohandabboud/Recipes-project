@@ -5,12 +5,12 @@
     const myParam = urlParams.get("search");
 
 
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=dce7fdccb5fb4eb8a4541cbd46ac0c57&includeIngredients="+myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=dce7fdccb5fb4eb8a4541cbd46ac0c57")
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=159bac7d7f9f413d931d0a6ee0a32b2e")
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 array[number] = recipe;
@@ -186,7 +186,7 @@
         if (checkBox3.checked == true) {}
     }
     */
-    var button1 = document.querySelector(".checkbox-button");
+    var button1 = document.querySelector("#button1");
     button1.addEventListener("click" , thirtyMins);
     button1.addEventListener("click" , fortyFiveMins);
     button1.addEventListener("click" , sixtyMins);
