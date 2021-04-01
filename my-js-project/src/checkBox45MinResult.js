@@ -1,4 +1,4 @@
-function timeFunction5 () {
+function time45MinsFunction () {
     fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey=5dc571ad8c4442e3be0ebea89c223437&maxReadyTime=45&number=10")
     .then(response => response.json())
     .then( data => { 
@@ -39,4 +39,4 @@ function timeFunction5 () {
         })
         })}
 
-window.addEventListener("load",timeFunction5);
+window.addEventListener("load",time45MinsFunction);
