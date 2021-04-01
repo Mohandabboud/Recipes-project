@@ -1,15 +1,28 @@
-.container1 {
-    background-color: aqua;
-    column-gap: 40px;
-}
+
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
     min-height: 100vh;
-    grid-gap: 40px;
-    margin-top: 20px;
-    align-content: space-around;
-    grid-template-areas:
-        "profile card1 card2 card3 pref"
-        "profile card4 card5 card6 pref"
+    justify-content: space-between;
+}
+.image11{
+    width: 500px;
+    height: 300px;
+}
+.flex_con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: raleway;
+    padding: 5%;
+}
+.shared {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.buttonrecipe {
+  
+}
+.container >p {
+    font-size: 25px;
+}
