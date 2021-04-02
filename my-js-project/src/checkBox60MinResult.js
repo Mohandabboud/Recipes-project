@@ -6,6 +6,8 @@ var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
+var tenth = "86f05ba6bcc64fc2880897e48d47d039";
 
 function time60MinsFunction () {
     fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ fourthAPI +"&maxReadyTime=60&number=10")
@@ -36,11 +38,10 @@ function time60MinsFunction () {
                 article.className = "article";
                 var table = document.getElementsByClassName("table")[0];
                 table.appendChild(card);
-                card.appendChild(image);
                 article.appendChild(h);
                 article.appendChild(p);
                 card.appendChild(a);
-                
+                a.appendChild(image);
                 a.appendChild(article);
         
                                
