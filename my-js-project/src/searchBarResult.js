@@ -7,6 +7,9 @@ var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
 var eleventhApi = "780aeeca39d34a1bab3789be644f5daf";
+var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
+var tenth = "86f05ba6bcc64fc2880897e48d47d039";
+
 var array = [];
 var number = 0;
    
@@ -46,10 +49,10 @@ var number = 0;
                 article.className = "article";
                 var table = document.getElementsByClassName("table")[0];
                 table.appendChild(card);
-                card.appendChild(image);
                 article.appendChild(h);
                 article.appendChild(p);
                 card.appendChild(a);
+                a.appendChild(image);
                 a.appendChild(article);   
                                
             })
@@ -89,10 +92,10 @@ var number = 0;
                     article.className = "article";
                     var table1 = document.getElementsByClassName("table")[0];
                     table1.appendChild(card);
-                    card.appendChild(image);
                     article.appendChild(h);
                     article.appendChild(p);
                     card.appendChild(a);
+                    a.appendChild(image);
                     a.appendChild(article);   
                 }
         })
@@ -132,10 +135,10 @@ var number = 0;
                     article.className = "article";
                     var table1 = document.getElementsByClassName("table")[0];
                     table1.appendChild(card);
-                    card.appendChild(image);
                     article.appendChild(h);
                     article.appendChild(p);
                     card.appendChild(a);
+                    a.appendChild(image);
                     a.appendChild(article);   
                 }
         })
@@ -175,10 +178,10 @@ var number = 0;
                     article.className = "article";
                     var table1 = document.getElementsByClassName("table")[0];
                     table1.appendChild(card);
-                    card.appendChild(image);
                     article.appendChild(h);
                     article.appendChild(p);
                     card.appendChild(a);
+                    a.appendChild(image);
                     a.appendChild(article);   
                 }
         })
