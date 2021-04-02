@@ -8,6 +8,7 @@
 }
 body{
     min-height: 100vh;
+    font-family: raleway;
 }
 nav{
     background: #87C3BD;
@@ -34,31 +35,36 @@ nav #logo {
  left: -550px;
  top: 8px;
 }
-nav .nav-items{
+
+
+.nav-items{
     display: flex;
-    padding: 0 0 0 40px;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 2em;
+    
 }
-nav .nav-items li{
-    display: flex;
-    justify-content: center;
-    padding: 0 -15px;
-    position: absolute;
-    right: 100px;
-    flex-wrap: wrap;
-}
+   
+/*.buton1 {
+    margin-left: 2em;
+    border-radius: 8px;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    background-color: white;
+    text-decoration: none;
+    
+   
+}*/
+
+
 nav .nav-items li a{
     color: rgb(75, 59, 59);
     font-size: 20px;
     text-decoration: none;
-    font: sans-serif;
+    
 }
-#join-now{
-    display: inline;
-    position: absolute;
-    right: 100px;
-    top: 1px;
-    flex-wrap: wrap;
-}
+
 .p1{
     padding-left: 170px;
     padding-top: 50px;
@@ -339,9 +345,7 @@ body{
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-* {
-  font-family: Open Sans;
-}
+*
 /* section {
   width: 100%;
   display: inline-block;

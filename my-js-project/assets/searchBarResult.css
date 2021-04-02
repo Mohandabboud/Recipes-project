@@ -23,7 +23,7 @@ body{
 }
 .card {
     
-  box-shadow: 10px 10px 5px rgb(182, 181, 181);
+  
     transition: 0.3s;
     width: 100%;
     border: 2px solid #e7e7e7;
@@ -60,7 +60,7 @@ body{
 }
 
 .image01{
-  width: 335px;
+  width:100%;
   display: flex;
   justify-content: center;
 }
@@ -68,10 +68,10 @@ body{
 h1{
   font-family: serif;
   font-size: 20px;
-  padding-left: 10px
+  padding-left: 10px;
+  margin-top: 1em;
 }
 .result-text{
-  font-family: serif;
   font-size: 17px;
   margin: 14px;
   padding-bottom: -45px;
@@ -101,7 +101,6 @@ h1{
 .link11{
   
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -111,10 +110,3 @@ h1{
   transition: all .1s ease-in
 }
 
-.article p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-
-}

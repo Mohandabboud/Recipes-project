@@ -3,7 +3,13 @@
     display: grid;
     grid-template-columns: 1fr 2fr ;
     column-gap: 3em;
-    padding-top: 3em;
+    padding-top: 2em;
+}
+.container h2 {
+    font-family: raleway;
+}
+.container h3 {
+    font-family: raleway;
 }
 
 .cards {
@@ -44,8 +50,9 @@
     }
     .container {
         font-size: 20px;
-        font-family: sans-serif;
+        font-family: raleway;
         line-height: 200%;
+        margin-left: 1em;
     }
     .shared {
         font-size: 30px;
@@ -69,8 +76,7 @@
     font-size: 15px;
     margin-left: 20px;
     background-color: white;
-    border: 2px solid blue;
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;   
+    border: 2px solid blue;   
 } 
         
 .buttonrecipe:hover {

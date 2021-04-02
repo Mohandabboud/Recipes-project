@@ -5,7 +5,8 @@ var fourthAPI = "caaf06b217bb42b8987e7cafc76673eb";
 var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
-var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var eighthAPI = "d4ef91af98534aec907bc09fca570f22";
+var ninthAPI = "effb4ce369ac45bbb4878b936c6d72da";
 var array = [];
 var number = 0;
    
@@ -14,12 +15,12 @@ var number = 0;
 
 
 
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ secondAPI +"&includeIngredients="+myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ ninthAPI +"&includeIngredients="+myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + secondAPI)
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + ninthAPI)
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 array[number] = recipe;

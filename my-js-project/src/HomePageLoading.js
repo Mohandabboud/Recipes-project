@@ -45,7 +45,7 @@ function myFunction () {
 //
 //window.addEventListener("load",myFunction);
 
-/*
+
 //var firstAPI = "8a07d27c762a4515b4eb63220b517e02";
 var secondAPI = "240f675c9ad44d34a96f35d6cb97542d";
 //var thirdAPI = "1c3d08b06c8e4d0189ef89e62b169eba";
@@ -54,14 +54,15 @@ var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var ninthAPI = "effb4ce369ac45bbb4878b936c6d72da";
 
 function fastestFood () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ fourthAPI +"&number=20")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ sixthAPI +"&number=20")
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ fourthAPI)
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ sixthAPI)
             .then(response => response.json())
             .then( recipe => { 
                 var fastestFood = document.getElementsByClassName("fastestFood")[0];
@@ -203,7 +204,7 @@ function random () {
     })}
 
 window.addEventListener("load",random);
-*/
+
 //function myFunction () {
 //var checkBox = document.getElementById("myCheck1");
 //if (checkBox.checked == true){
