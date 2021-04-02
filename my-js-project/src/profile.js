@@ -33,11 +33,11 @@ function getRecipes() {
             article.className = "article";
             var table = document.getElementsByClassName("table")[0];
             cards.appendChild(card);
-            card.appendChild(image);
             //card.appendChild(container);
             article.appendChild(h);
            // article.appendChild(p);
             card.appendChild(a);
+            a.appendChild(image);
             //container.appendChild(button);
             a.appendChild(article);
 

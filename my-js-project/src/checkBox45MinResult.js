@@ -6,14 +6,17 @@ var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
+var tenth = "86f05ba6bcc64fc2880897e48d47d039";
+var aa = "77a0b29b0f524bcfad69eca6b8e94131";
 
 
 function time45MinsFunction () {
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ fourthAPI +"&maxReadyTime=45&number=10")
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ aa +"&maxReadyTime=45&number=10")
     .then(response => response.json())
     .then( data => { 
         data.results.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ fourthAPI)
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ aa)
             .then(response => response.json())
             .then( recipe => { 
                 var card = document.createElement("div");
@@ -37,11 +40,10 @@ function time45MinsFunction () {
                 article.className = "article";
                 var table = document.getElementsByClassName("table")[0];
                 table.appendChild(card);
-                card.appendChild(image);
                 article.appendChild(h);
                 article.appendChild(p);
                 card.appendChild(a);
-                
+                a.appendChild(image);
                 a.appendChild(article);
         
                                

@@ -5,6 +5,7 @@
   outline: none;
   font-family: raleway;
 }
+
 body{
   min-height: 100vh;
 }
@@ -22,8 +23,8 @@ body{
   padding-bottom: 30px;
 }
 .card {
-    
-  
+
+    box-shadow: 10px 5px 20px rgba(182, 181, 181, 0.3);
     transition: 0.3s;
     width: 100%;
     border: 2px solid #e7e7e7;
@@ -63,6 +64,7 @@ body{
   width:100%;
   display: flex;
   justify-content: center;
+  height: 222.93px;
 }
 
 h1{
