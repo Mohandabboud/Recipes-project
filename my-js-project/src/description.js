@@ -15,7 +15,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("search");
 var instruction = [];
 var ingredient = [];
-fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ fifthAPI)
+fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ tenth)
 .then(response => response.json())
 .then( recipe => {
     console.log(recipe)
