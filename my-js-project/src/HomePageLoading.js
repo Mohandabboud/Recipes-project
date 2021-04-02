@@ -51,17 +51,21 @@ function myFunction () {
 // var thirdAPI = "b78c7f91b31b4c16ad3930ab2a4ba584";
 var fourthAPI = "8a07d27c762a4515b4eb63220b517e02";
 var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
-var sixthAPI = "68ece3570d8c42d8a2fbdc8690fbe8ce";
-var seventhAPI = "b78c7f91b31b4c16ad3930ab2a4ba584";
-var eighthAPI = "68ece3570d8c42d8a2fbdc8690fbe8ce";
+var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
+var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
+var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var ninth = "28790576903146fba532510e390588fd";
+var tenth = "86f05ba6bcc64fc2880897e48d47d039";
+var eleAPI = "f68333e004db49c2866855f6269a4b25";
+
 
 function fastestFood () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ fourthAPI +"&number=20")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ ninth +"&number=20")
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ fourthAPI)
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ ninth)
             .then(response => response.json())
             .then( recipe => { 
                 var fastestFood = document.getElementsByClassName("fastestFood")[0];
@@ -82,10 +86,10 @@ function fastestFood () {
                     var article = document.createElement("article");
                     article.className = "article";
                     fastestFood.appendChild(firstCard);
-                    firstCard.appendChild(image);
                     //firstCard.appendChild(p);
                     article.appendChild(h);
                     fastestFood.appendChild(a);
+                    a.appendChild(image);
                     a.appendChild(article);
                     number = number +1;
                 }
@@ -125,9 +129,9 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey="+ sixthAPI +"&number=2
         var article = document.createElement("article");
         article.className = "article";
         easiestFood.appendChild(firstCard);
-        firstCard.appendChild(image);
         article.appendChild(h);
         easiestFood.appendChild(a);
+        a.appendChild(image);
         a.appendChild(article);
         number = number +1;
        }
@@ -161,9 +165,9 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey="+ eighthAPI +"&number=
         var article = document.createElement("article");
         article.className = "article";
         mostPopular.appendChild(firstCard);
-        firstCard.appendChild(image);
         article.appendChild(h);
         mostPopular.appendChild(a);
+        a.appendChild(image);
         a.appendChild(article);
         number = number +1;
        }
@@ -194,15 +198,16 @@ function random () {
         var article = document.createElement("article");
         article.className = "article";
         container.appendChild(firstCard);
-        firstCard.appendChild(image);
         article.appendChild(h);
         firstCard.appendChild(a);
+        a.appendChild(image);
         a.appendChild(article);
         number = number + 1;
     })
     })}
 
 window.addEventListener("load",random);
+
 //function myFunction () {
 //var checkBox = document.getElementById("myCheck1");
 //if (checkBox.checked == true){

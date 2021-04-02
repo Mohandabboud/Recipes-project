@@ -7,6 +7,38 @@ const steps = urlParams.get("steps");
 fetch('http://localhost:3000/recipes')
         .then(response =>  response.json())
         .then( recipe => {
+                var result = document.querySelector(".result");
+                console.log(result)
+                //var recipes = document.querySelector(".recipe")[0];
+               // var description = document.querySelector(".description");
+                //console.log(description)
+                var image = document.querySelector(".resultImage");
+                console.log(image)
+                var recipeTime = document.querySelector(".recipe-time");
+                console.log(recipeTime)
+                var servings = document.querySelector(".servings");
+                console.log(servings)
+                var ingredient = document.querySelector(".ingredients");
+                console.log(ingredient)
+                var instructions = document.querySelector(".instructions");
+                console.log(instructions)
+                image.src = images;
+                //description.innerHTML = recipe.summary;
+                 //recipeTime.innerHTML = "Estimated time: " + recipe.readyInMinutes +" mins";
+                //servings.innerHTML = "Servings: " + recipe.servings;
+                var p1 = document.createElement("p");
+                p1.innerHTML= ingredients;
+                ingredient.appendChild(p1);
+                var p2 = document.createElement("p");
+                p2.innerHTML= steps;
+                instructions.appendChild(p2);
+        })
+
+
+
+
+
+                /*
                     var result = document.getElementsByClassName("result11")[0];
                     var imageText = document.createElement("div");
                     var image = document.createElement("img");
@@ -45,3 +77,4 @@ fetch('http://localhost:3000/recipes')
                     result.appendChild(directions);
                     directions.appendChild(p1);
                             })
+                            */
