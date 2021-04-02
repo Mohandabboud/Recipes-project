@@ -93,18 +93,25 @@
 */
 .resultImage {
     grid-area: resultImage;
+    width: 30vw;
+    
 }
 
 .description {
     grid-area: description;
+    padding-top: 10px;
 }
 
-.box {
+.box >p {
     grid-area: box;
+    float: right;
+    padding-right: 0px;
+    
 }
 
 .instructions {
     grid-area: instructions;
+    padding-top: 35px;
 }
 
 .recipe {
@@ -113,8 +120,37 @@
 
 .result {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr ;
     grid-template-areas: "recipe box" ;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    grid-gap: 5vw;
+    margin-top: 8vh;
+}
 
+
+.recipe-time{
+    position: relative;
+   padding-bottom: px;
+   padding-top: 5px;
+    font-family: raleway;
+}
+.servings{
+   padding-top: 5px;
+    position: relative;
+    font-family: raleway;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+#users{
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 25px;
+}
+#clock{
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
 }
