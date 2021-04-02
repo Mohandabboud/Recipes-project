@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/insertNewRecipe.css">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -23,25 +22,32 @@
     </div>
   </nav>
     <br>
-      <p class="instruction">Here you can insert your own created recipes or optimized one and share it with the other users,</p>
-      <p class="instruction">It will get reviewed so make sure to put your touch and make it delicious.</p>
-    <br>
-     <form >
-      <label class="title" for="fname">Add a title:</label>
-      <input id="title-box" type="text" id="title" name="title" placeholder="Add a Title"><br><br>
-      <label  class="img-insert" for="fname">Add an image url link:</label>
-      <input id="title-link" type="text" id="images" name="title" placeholder="Add a url link"><br><br>
-      <label class="descript" for="fname">Add a description:</label><br><br>
-      <textarea rows = "8" cols = "60" name= "description" id="description"></textarea><br><br>
-      <p class="instruction">Please put your ingredients below one by one:</p><br>
-      <textarea rows = "8" cols = "60" name = "description" id="ingredient"></textarea><br><br>
-      <p class="instruction">In this section, you need to provide a well-explained instructions for the users:</p><br>
-      <textarea rows = "8" cols = "60" name = "description" id="steps"></textarea><br><br>
-        
-    </form> 
-    <button class="btn-primary"  id="submit" >Add the recipe</button>
-    <button class="btn-secondary" onclick="location.href='profile.html'">Go to your profile</button>
-    <footer class="footer-distributed">
+      <p class="headerDirection">Here you can insert your own created recipes or optimized one and share it with the other users,</p>
+      <p class="headerDirection">It will get reviewed so make sure to put your touch and make it delicious.</p>
+      <br>
+    <div class="form">
+      <form>
+        <div class="txtBoxes">
+          <label for="fname"></label>
+          <input type="text" id="title" name="title" placeholder="Add a title" class="input-box1"><br><br>
+          <label for="fname"></label>
+          <input type="text" id="images" name="title" placeholder="Add Img url link" class="input-box2"><br><br>
+        </div>
+        <br>
+        <br>
+        <label class="descript" for="fname">Add a description:</label><br><br>
+        <textarea rows = "8" cols = "60" name= "description" id="description"></textarea><br><br>
+        <p class="instruction">Please put your ingredients below one by one:</p><br>
+        <textarea rows = "8" cols = "60" name = "description" id="ingredient"></textarea><br><br>
+        <p class="instruction">In this section, you need to provide a well-explained instructions for the users:</p><br>
+        <textarea rows = "8" cols = "60" name = "description" id="steps"></textarea><br><br>
+      </form>
+    </div>
+    <div class="btnContainer">
+      <button class="btn-primary"  id="submit" >Add the recipe</button>
+      <!-- <button class="btn-secondary" onclick="location.href='profile.html'">Go to your profile</button> -->
+    </div>  
+      <footer class="footer-distributed">
 
         <div class="footer-left">
   
