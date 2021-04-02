@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,15 +40,62 @@
           <input id="input" class="input-box" type="text" name="" placeholder="Search">
           <a class="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
         </div>  -->
-        <div class="nav-items">
-          <li><a href="/profile.html"> Stanley</a></li>
-        </div>
-      </nav>
-      <div class="search-box1">
-        <input type="text" id="input" class="input-box1" 
-        placeholder="Search your favorite recipe">
-        <a class="btn1" id="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
+    <div class="nav-items">
+      <div class="buton">
+        <button><a onClick="location.href='insertNewRecipe.html'">Add Recipe</a></button>
       </div>
+      <div>
+      <button class="butn"><a href="/profile.html"> Profile</a></button>
+    </div>
+    </div>
+  </nav>
+  <div class="search-box1">
+    <input type="text" id="input" class="input-box1" placeholder="Search your favorite recipe">
+    <a class="btn1" id="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
+  </div>
+
+  <div class="checkbox">
+    <p id="checkbox-text1">Search for recipes take: </p>
+    <br>
+    <form action="nothing.asp" id="myForm" method="GET">
+      <p> Less than 30 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck1" onClick="timeFunction30Mins()">
+      </p>
+      <p> Less than 45 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck2" onClick="timeFunction45Mins()">
+      </p>
+      <p> Less than 60 mins &nbsp;&nbsp;<input type="radio" name="time" id="myCheck3" onClick="timeFunction60Mins()">
+      </p>
+      <br>
+
+      <button class="checkbox-button">Submit</button>
+    </form>
+    <br>
+  </div>
+  <p class="p1">Find your request, choose between the best recipes,</p>
+  <div class="text1">
+    <p>&nbsp;&nbsp;</p>
+    <p class="text2">&nbsp;&nbsp;</p>
+    <p class="text3" id="text3">&nbsp;&nbsp;</p>
+  </div>
+  <br>
+  <div class="flex-container">
+    <div class="easiestFood">
+      <p class="text2">Easiest Recipes</p>
+      <!-- <img src="images/imagev170129559c4fe6c35f9bbb5529d0076fa-mz4ujz2l1q6oakt7or2_t1880.jpg" width="300px"> -->
+    </div>
+    <div class="fastestFood">
+      <p class="text2">Fastest Recipes</p>
+      <!-- <img src="images/weeattogether.com-2.jpg" width="450x"> -->
+    </div>
+    <div class="mostPopular">
+      <p class="text3" id="text3">Most Popular</p>
+      <!-- <img src="images/imagev170129559c4fe6c35f9bbb5529d0076fa-mz4ujz2l1q6oakt7or2_t1880.jpg" width="300px"> -->
+    </div>
+  </div>
+  <h1 class="day-meals">Recommended meals for you to try</h1>
+  <br>
+  <br>
+  <div class="flex-container">
+
 
       <div class="checkbox">
         <p id="checkbox-text1">Search for recipes: </p>
@@ -123,4 +179,5 @@
             <script src="/src/select.js"></script>
 
 </body>
+
 </html>

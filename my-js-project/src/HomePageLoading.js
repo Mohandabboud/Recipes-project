@@ -46,10 +46,12 @@ function myFunction () {
 //window.addEventListener("load",myFunction);
 
 
+
 var firstAPI = "9b19014764264e228cd8cfd7de2b2457";
 // var secondAPI = "240f675c9ad44d34a96f35d6cb97542d";
 var thirdAPI = "b78c7f91b31b4c16ad3930ab2a4ba584";
 var fourthAPI = "8a07d27c762a4515b4eb63220b517e02";
+
 var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";

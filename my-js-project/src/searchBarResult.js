@@ -5,6 +5,7 @@ var fourthAPI = "caaf06b217bb42b8987e7cafc76673eb";
 var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
+
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
 var eleventhApi = "780aeeca39d34a1bab3789be644f5daf";
 var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
@@ -18,6 +19,7 @@ var number = 0;
    
    const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("search");
+
 
 
 
