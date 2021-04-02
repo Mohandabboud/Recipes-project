@@ -23,6 +23,7 @@ body: JSON.stringify(recipe)
 .then(response => { console.log(response)
                     console.log(recipe)
 })
+location.href = "/profile.html";
 }
     
 var submit = document.querySelector("#submit");
