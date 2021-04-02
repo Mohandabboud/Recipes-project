@@ -8,13 +8,14 @@ var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
 var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
 var tenth = "86f05ba6bcc64fc2880897e48d47d039";
+var aa = "77a0b29b0f524bcfad69eca6b8e94131";
 
 function time60MinsFunction () {
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ fourthAPI +"&maxReadyTime=60&number=10")
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ aa +"&maxReadyTime=60&number=10")
     .then(response => response.json())
     .then( data => { 
         data.results.forEach( function (item) {
-            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ fourthAPI)
+            fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ aa)
             .then(response => response.json())
             .then( recipe => { 
                 var card = document.createElement("div");

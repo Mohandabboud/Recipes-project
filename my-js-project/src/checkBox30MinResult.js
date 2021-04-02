@@ -40,7 +40,7 @@
 */
 
 
-//var firstAPI = "8a07d27c762a4515b4eb63220b517e02";
+var firstAPI = "9b19014764264e228cd8cfd7de2b2457";
 var secondAPI = "240f675c9ad44d34a96f35d6cb97542d";
 //var thirdAPI = "1c3d08b06c8e4d0189ef89e62b169eba";
 var fourthAPI = "caaf06b217bb42b8987e7cafc76673eb";
@@ -50,13 +50,14 @@ var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
 var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
 var tenth = "86f05ba6bcc64fc2880897e48d47d039";
+var aa = "77a0b29b0f524bcfad69eca6b8e94131";
 
 function time30MinsFunction () {
-        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ tenth+ "&maxReadyTime=30&number=10")
+        fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ aa + "&maxReadyTime=30&number=10")
         .then(response => response.json())
         .then( data => { 
             data.results.forEach( function (item) {
-                fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ tenth)
+                fetch(" https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ aa)
                 .then(response => response.json())
                 .then( recipe => {
                     var card = document.createElement("div");
