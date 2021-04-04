@@ -41,6 +41,7 @@ var number = 0;
                 image.src = recipe.image;
                 image.className = "image01";
                 var h = document.createElement("h1");
+                h.className ="header1"
                 h.innerHTML = recipe.title;
                 var p = document.createElement("p");
                 p.className = "result-text";

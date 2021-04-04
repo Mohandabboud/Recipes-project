@@ -80,9 +80,10 @@ body{
   height: 222.93px;
 }
 
-h1{
+.header1{
   font-size: 20px;
-  padding-left: 10px;
+  width: 70%;
+ 
   
 }
 .result-text{
