@@ -59,6 +59,19 @@ body{
   border-radius: 4px;
   float: right;
 }
+#button2{
+  font-family: sans-serif;
+  /* position: absolute; */
+  top: 80%;
+  right: 60px;
+  background: #87C3BD;
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 5px 5px;
+  font-family: raleway;
+  border-radius: 4px;
+  float: right;
+}
 
 .image01{
   width:100%;
@@ -68,10 +81,9 @@ body{
 }
 
 h1{
-  font-family: serif;
   font-size: 20px;
   padding-left: 10px;
-  margin-top: 1em;
+  
 }
 .result-text{
   font-size: 17px;
@@ -111,4 +123,27 @@ h1{
   top: 0;
   transition: all .1s ease-in
 }
-
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1em;
+  
+}
+#d {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
+#checkbox-text2{
+    
+    right: 15px;
+    padding: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-family: raleway;
+}
+.container p {
+  color:brown;
+ 
+}

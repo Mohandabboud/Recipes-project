@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap');
 .container-personalpage {
-   /*display: grid;
+    display: grid;
     grid-template-columns: 1fr 2fr ;
-    column-gap: 3em;*/
-    display: flex;
-    flex-direction: row;
+    column-gap: 3em;
     padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-.container h2 {
-    font-family: raleway;
-}
-.container h3 {
-    font-family: raleway;
+    width: 80vw;
+    justify-content: space-around;
 }
 
 
@@ -24,7 +16,7 @@
     grid-gap: 2rem;
     padding-top: 50px;
     padding-bottom: 30px; 
-    margin-left: 7.5em;
+   
 }
      
     .card {
@@ -57,8 +49,8 @@
         border-radius: 4px;
        
     }
-    .container {
-        float: right;
+    .basic-info {
+       
         font-size: 20px;
         font-family: raleway;
         line-height: 200%;
@@ -75,32 +67,17 @@
     }
     .profile {
         padding-left: 1rem;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 15px;
+      
+      
     }
-.buttonrecipe{
-    margin-left: 20%;
-    margin-top: 10%;
-    border-radius: 8px;
-    height: 50px;
-    padding: 5px;
-    font-size: 15px;
-    margin-left: 20px;
-    background-color: white;
-    border: 2px solid blue;   
-} 
+
         
-.buttonrecipe:hover {
-    background-color: blue;
-    color: white;
-    cursor: pointer;
- }
+
  .profile h1 {
      margin-bottom: 50px;
      font-family: raleway;
      text-align: center;
-     margin-left: -8em;
+     
 
  }
  .about {
@@ -113,7 +90,7 @@
  .about p {
      width: 300px;
      line-height: 2em;
-     font-size: 20px;
+     font-size: 15px;
  }
 
     /*.link11{
