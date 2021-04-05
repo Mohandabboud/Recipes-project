@@ -67,12 +67,12 @@ var se = "2e1cf49c91d146b9b258eb00bcd9567c";
 var ei = "30ebf32955d54d9e8a69df8246ad2691";
 function fastestFood () {
 
-    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ tenth +"&number=20")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ ei+"&number=20")
     .then(response => response.json())
     .then( data => {
         var number = 0;
         data.recipes.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ tenth)
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ ei)
             .then(response => response.json())
             .then( recipe => { 
                 var fastestFood = document.getElementsByClassName("fastestFood")[0];
@@ -113,12 +113,12 @@ window.addEventListener("load",fastestFood);
 
 
 function easiestFood () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey="+ fifthAPI +"&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey="+ ei +"&number=20")
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
-    fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ fifthAPI)
+    fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ ei)
     .then(response => response.json())
     .then( recipe => { 
         var easiestFood = document.getElementsByClassName("easiestFood")[0];
@@ -149,12 +149,12 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey="+ fifthAPI +"&number=2
 window.addEventListener("load",easiestFood);
 
 function mostPopular () {
-fetch("https://api.spoonacular.com/recipes/random?apiKey="+ fifthAPI +"&number=20")
+fetch("https://api.spoonacular.com/recipes/random?apiKey="+ ei +"&number=20")
 .then(response => response.json())
 .then( data => {
     var number = 0;
     data.recipes.forEach( function (item) {
-    fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ fifthAPI)
+    fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey="+ ei)
     .then(response => response.json())
     .then( recipe => { 
         var mostPopular = document.getElementsByClassName("mostPopular")[0];
@@ -186,7 +186,7 @@ window.addEventListener("load",mostPopular);
 
 
 function random () {
-    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ tenth +"&number=4")
+    fetch("https://api.spoonacular.com/recipes/random?apiKey="+ ei +"&number=4")
     .then(response => response.json())
     .then( data => {
         var number = 0;
