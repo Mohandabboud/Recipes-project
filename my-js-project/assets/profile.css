@@ -4,33 +4,34 @@
     grid-template-columns: 1fr 2fr ;
     column-gap: 3em;
     padding-top: 2em;
+    width: 80vw;
+    justify-content: space-around;
 }
-.container h2 {
-    font-family: raleway;
-}
-.container h3 {
-    font-family: raleway;
-}
+
 
 .cards {
     display: grid; 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     padding-top: 50px;
     padding-bottom: 30px; 
+   
 }
      
     .card {
     border-radius: 4px;
     background-color: #b2c8c0; 
+    width: 400px;
+    height: 350px;
+    
     }
     .card:hover .image1 {
         opacity: .3;
     }
     .image1 {
         width: 100%;
-        height:90%;
+        height:85%;
         object-fit: cover;
         
         
@@ -43,16 +44,19 @@
        
     }
     .profileimage {
-        width: 100%;
-        height: auto;
+        width: 300px;
+        height: 250px;
         border-radius: 4px;
        
     }
-    .container {
+    .basic-info {
+       
         font-size: 20px;
         font-family: raleway;
         line-height: 200%;
         margin-left: 1em;
+       margin-top: 3.5em;
+        
     }
     .shared {
         font-size: 30px;
@@ -63,33 +67,20 @@
     }
     .profile {
         padding-left: 1rem;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 15px;
+      
+      
     }
-.buttonrecipe{
-    margin-left: 20%;
-    margin-top: 10%;
-    border-radius: 8px;
-    height: 50px;
-    padding: 5px;
-    font-size: 15px;
-    margin-left: 20px;
-    background-color: white;
-    border: 2px solid blue;   
-} 
+
         
-.buttonrecipe:hover {
-    background-color: blue;
-    color: white;
-    cursor: pointer;
- }
+
  .profile h1 {
      margin-bottom: 50px;
      font-family: raleway;
      text-align: center;
+     
 
  }
+
  nav img{
     width: 170px;
 }
@@ -105,6 +96,20 @@ nav #logo {
  right: 490px;
  top: 8px;
 }
+
+ .about {
+     margin-top: 1em;
+     font-size: 25px;
+     
+    
+
+ }
+ .about p {
+     width: 300px;
+     line-height: 2em;
+     font-size: 15px;
+ }
+
 
     /*.link11{
   

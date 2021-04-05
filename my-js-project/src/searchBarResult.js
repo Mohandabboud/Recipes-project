@@ -6,7 +6,7 @@ var fifthAPI = "b2f27322a1f347379d89b490ed9528e9";
 var sixthAPI = "81d2fb7ce8bb447e8d0e372ccf4d79d0";
 var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 
-var eighthAPI = "144b024c11254237bd7586886f98dfec";
+var eighthAPI = "b517e1a699364eac851ad0885055bb22";
 var eleventhApi = "780aeeca39d34a1bab3789be644f5daf";
 var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
 var tenth = "86f05ba6bcc64fc2880897e48d47d039";
@@ -42,10 +42,13 @@ var number = 0;
                 image.src = recipe.image;
                 image.className = "image01";
                 var h = document.createElement("h1");
+                h.className ="header1"
                 h.innerHTML = recipe.title;
                 var p = document.createElement("p");
                 p.className = "result-text";
                 p.innerHTML = recipe.summary;
+                var p1 = document.createElement("p");
+                p1.innerHTML = recipe.readyInMinutes + " mins";
                 var a = document.createElement("a");
                 a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                 a.className = "link11"
@@ -55,11 +58,14 @@ var number = 0;
                 article.className = "article";
                 var table = document.getElementsByClassName("table")[0];
                 table.appendChild(card);
-                article.appendChild(h);
-                article.appendChild(p);
                 card.appendChild(a);
                 a.appendChild(image);
-                a.appendChild(article);   
+                a.appendChild(container);
+                container.appendChild(h);
+                container.appendChild(p1);
+                a.appendChild(article);
+                article.appendChild(p);
+                //article.appendChild(p1); 
                                
             })
         })
@@ -89,6 +95,8 @@ var number = 0;
                     var p = document.createElement("p");
                     p.className = "result-text";
                     p.innerHTML = item.summary;
+                    var p1 = document.createElement("p");
+                    p1.innerHTML = item.readyInMinutes + " mins";
                     var a = document.createElement("a");
                     a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                     a.className = "link11"
@@ -98,11 +106,13 @@ var number = 0;
                     article.className = "article";
                     var table1 = document.getElementsByClassName("table")[0];
                     table1.appendChild(card);
-                    article.appendChild(h);
-                    article.appendChild(p);
                     card.appendChild(a);
                     a.appendChild(image);
-                    a.appendChild(article);   
+                    a.appendChild(container);
+                    container.appendChild(h);
+                    container.appendChild(p1);
+                    a.appendChild(article);
+                    article.appendChild(p); 
                 }
         })
 
@@ -132,6 +142,8 @@ var number = 0;
                     var p = document.createElement("p");
                     p.className = "result-text";
                     p.innerHTML = item.summary;
+                    var p1 = document.createElement("p");
+                    p1.innerHTML = item.readyInMinutes + " mins";
                     var a = document.createElement("a");
                     a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                     a.className = "link11"
@@ -141,11 +153,13 @@ var number = 0;
                     article.className = "article";
                     var table1 = document.getElementsByClassName("table")[0];
                     table1.appendChild(card);
-                    article.appendChild(h);
-                    article.appendChild(p);
                     card.appendChild(a);
                     a.appendChild(image);
-                    a.appendChild(article);   
+                    a.appendChild(container);
+                    container.appendChild(h);
+                    container.appendChild(p1);
+                    a.appendChild(article);
+                    article.appendChild(p);  
                 }
         })
 
@@ -175,6 +189,8 @@ var number = 0;
                     var p = document.createElement("p");
                     p.className = "result-text";
                     p.innerHTML = item.summary;
+                    var p1 = document.createElement("p");
+                    p1.innerHTML = item.readyInMinutes + " mins";
                     var a = document.createElement("a");
                     a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                     a.className = "link11"
@@ -184,11 +200,13 @@ var number = 0;
                     article.className = "article";
                     var table1 = document.getElementsByClassName("table")[0];
                     table1.appendChild(card);
-                    article.appendChild(h);
-                    article.appendChild(p);
                     card.appendChild(a);
                     a.appendChild(image);
-                    a.appendChild(article);   
+                    a.appendChild(container);
+                    container.appendChild(h);
+                    container.appendChild(p1);
+                    a.appendChild(article);
+                    article.appendChild(p); 
                 }
         })
 
@@ -205,7 +223,7 @@ var number = 0;
         if (checkBox3.checked == true) {}
     }
     */
-    var button1 = document.querySelector("#button1");
+    var button1 = document.querySelector("#button2");
     button1.addEventListener("click" , thirtyMins);
     button1.addEventListener("click" , fortyFiveMins);
     button1.addEventListener("click" , sixtyMins);
