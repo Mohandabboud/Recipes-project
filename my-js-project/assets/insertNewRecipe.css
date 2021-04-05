@@ -16,13 +16,13 @@ nav img{
 nav #logo {
     display: flex;
  position: relative;
- left: -60px;
+ left: 0px;
  top: 1px;
 }
-#name-logo{
+#name-logo1{
  display: flex;
  position: relative;
- right: 520px;
+ right: 490px;
  top: 8px;
 }
 h1 {

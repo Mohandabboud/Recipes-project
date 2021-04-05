@@ -27,10 +27,13 @@ function time45MinsFunction () {
                 image.src = recipe.image;
                 image.className = "image01";
                 var h = document.createElement("h1");
+                h.className ="header1";
                 h.innerHTML = recipe.title;
                 var p = document.createElement("p");
                 p.className = "result-text";
                 p.innerHTML = recipe.summary;
+                var p1 = document.createElement("p");
+                p1.innerHTML = recipe.readyInMinutes + " mins";
                 var a = document.createElement("a");
                 a.href = "http://127.0.0.1:8000/description.html?search="+item.id;
                 a.className = "link11"
@@ -40,11 +43,13 @@ function time45MinsFunction () {
                 article.className = "article";
                 var table = document.getElementsByClassName("table")[0];
                 table.appendChild(card);
-                article.appendChild(h);
-                article.appendChild(p);
                 card.appendChild(a);
                 a.appendChild(image);
+                a.appendChild(container);
+                container.appendChild(h);
+                container.appendChild(p1);
                 a.appendChild(article);
+                article.appendChild(p);
         
                                
             })
