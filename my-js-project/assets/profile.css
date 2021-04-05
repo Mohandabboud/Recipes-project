@@ -90,6 +90,21 @@
      text-align: center;
 
  }
+ nav img{
+    width: 170px;
+}
+nav #logo {
+    display: flex;
+ position: relative;
+ left: -60px;
+ top: 1px;
+}
+#name-logo{
+ display: flex;
+ position: relative;
+ right: 490px;
+ top: 8px;
+}
 
     /*.link11{
   

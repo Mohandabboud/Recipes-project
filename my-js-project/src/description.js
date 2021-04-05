@@ -12,7 +12,7 @@ var eleventhApi = "780aeeca39d34a1bab3789be644f5daf";
 var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
 var tenth = "86f05ba6bcc64fc2880897e48d47d039";
 var bb = "2e1cf49c91d146b9b258eb00bcd9567c";
-
+var newa = "25f5501ccd49492fa0397d909e09bfdb";
 
 
 
@@ -20,7 +20,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("search");
 var instruction = [];
 var ingredient = [];
-fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ firstAPI)
+fetch(" https://api.spoonacular.com/recipes/"+ myParam +"/information?apiKey="+ newa)
 .then(response => response.json())
 .then( recipe => {
     console.log(recipe)

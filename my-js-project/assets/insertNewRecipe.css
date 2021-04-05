@@ -10,7 +10,21 @@ form {
     text-align: left;
 }
 
-
+nav img{
+    width: 170px;
+}
+nav #logo {
+    display: flex;
+ position: relative;
+ left: -60px;
+ top: 1px;
+}
+#name-logo{
+ display: flex;
+ position: relative;
+ right: 520px;
+ top: 8px;
+}
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;

@@ -86,6 +86,21 @@ h1{
     overflow: hidden;
 
 }
+nav img{
+  width: 170px;
+}
+nav #logo {
+  display: flex;
+position: relative;
+left: -60px;
+top: 1px;
+}
+#name-logo{
+display: flex;
+position: relative;
+right: 490px;
+top: 8px;
+}
 
 
 @media only screen and (min-width: 500px) {
