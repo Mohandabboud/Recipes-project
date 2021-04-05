@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+nav{
+  background: #87C3BD;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 101px;
+  box-shadow: #ADD6D2 25px;
+}
+nav img{
+  width: 170px;
+}
+nav #logo {
+  display: flex;
+position: relative;
+left: -60px;
+top: 1px;
+}
+#name-logo{
+display: flex;
+position: relative;
+right: 430px;
+top: 8px;
+}
+
+
+nav .nav-items{
+  display: flex;
+  padding: 0 0 0 40px;
+  list-style: none;
+  
+}
+nav .nav-items li{
+  padding: 0 15px;
+}
+
+nav .nav-items li a{
+  color: rgb(75, 59, 59);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  font: sans-serif;
+  display: inline-block;
+}
+#recipe-button{
+  font-family: raleway;
+  top: 24%;
+  right: 60px;
+  background: #87C3BD;
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  float: right;
+  color: black;
+}
+#recipe-button:hover {
+  background-color: #01A3A4;
+  color: white;
+  cursor: pointer;
+}
+#profile-nav{
+  padding-top: 6px;
+  font-size: 20px;
+}
+.grid {
+  display: grid;
+  width: 114em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  padding-left: 20em;
+
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  align-items: center;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.textOnTop{
+  font-size: 3rem;
+  padding-left: 6.5em;
+  padding-right: 6.5em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-family: raleway;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+  height: 8.5em;
+}
+
+#Mohand-photo{
+  width: 100%;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+.footer-distributed{
+  background: #87C3BD;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 40px 40px;
+  margin-top: 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+  width: 40%;
+}
+/* The company logo */
+.footer-distributed h3{
+  color:  #FFFFFF;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+.footer-distributed h3 span{
+  color:  rgb(38, 41, 41);
+}
+/* Footer links */
+.footer-distributed .footer-links{
+  color:  #FFFFFF;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+  width: 35%;
+}
+.footer-distributed .footer-center i{
+  background-color:  #33383B;
+  color: #FFFFFF;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #FFFFFF;
+font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+.footer-distributed .footer-center p a{
+  color:  rgb(57, 65, 64);
+  text-decoration: none;;
+}
+.footer-distributed .footer-links a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+  width: 20%;
+}
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #FFFFFF;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383B;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+@media (max-width: 880px) {
+  .footer-distributed{
+      font: bold 14px sans-serif;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i{
+      margin-left: 0;
+  }
+}
