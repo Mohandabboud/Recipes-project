@@ -24,12 +24,12 @@ var number = 0;
 
 
 
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ secondAPI +"&includeIngredients="+ myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ newa +"&includeIngredients="+ myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + secondAPI)
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + newa)
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 array[number] = recipe;
