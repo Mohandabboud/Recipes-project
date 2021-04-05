@@ -93,17 +93,23 @@ nav .nav-items li a{
 
 
 .p1{
-    padding-left: 170px;
+    padding-left: 10rem;
     padding-top: 50px;
     font-size: 25px;
     font-family: raleway;
+    
+}
+.checkboss {
+    display: flex;
+    justify-content: flex-end;
+    
+
 }
 .checkbox{
     padding-right: 15px;
     font-size: 15px;
     font-family: raleway;
     float: right;
-
     padding-top: 10px;
 
 }
