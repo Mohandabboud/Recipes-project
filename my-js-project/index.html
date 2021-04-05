@@ -34,13 +34,16 @@
           <input id="input" class="input-box" type="text" name="" placeholder="Search">
           <a class="btn" onClick="ChangeHref()"><i class="fas fa-search"></i></a>
         </div>  -->
-    <div class="nav-items">
-      <div class="buton">
+        <div class="nav-items">
+          <li><button id="recipe-button"><a onClick="location.href='insertNewRecipe.html'">Add Recipe</a></button></li> 
+          <li><a id="profile-nav" href="/profile.html">Profile <i class="fas fa-user"></i></a></li>
+        </div>
+      <!-- <div class="buton">
         <button><a onClick="location.href='insertNewRecipe.html'">Add Recipe</a></button>
       </div>
       <div class="buton1">
       <button class="butn"><a href="/profile.html"> Profile</a></button>
-    </div>
+    </div> -->
     </div>
   </nav>
   <div class="search-box1">
@@ -85,7 +88,7 @@
       <!-- <img src="images/imagev170129559c4fe6c35f9bbb5529d0076fa-mz4ujz2l1q6oakt7or2_t1880.jpg" width="300px"> -->
     </div>
   </div>
-  <h1 class="day-meals">Recommended meals for you to try</h1>
+  <h1 id="day-meals">Recommended meals</h1>
   <br>
   <br>
   <div class="flex-container">

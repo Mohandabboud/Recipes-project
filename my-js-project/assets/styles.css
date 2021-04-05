@@ -32,38 +32,65 @@ nav #logo {
 #name-logo{
  display: flex;
  position: relative;
- left: -550px;
+ right: 430px;
  top: 8px;
 }
 
 
-.nav-items{
+nav .nav-items{
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    padding: 2em;
+    padding: 0 0 0 40px;
+    list-style: none;
     
 }
-   
-/*.buton1 {
-    margin-left: 2em;
-    border-radius: 8px;
-    height: 50px;
-    width: 50px;
-    font-size: 50px;
-    background-color: white;
-    text-decoration: none;
-    
-   
-}*/
-
+nav .nav-items li{
+    padding: 0 15px;
+}
 
 nav .nav-items li a{
     color: rgb(75, 59, 59);
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
-    
+    font: sans-serif;
+    display: inline-block;
 }
+#recipe-button{
+    font-family: raleway;
+    top: 24%;
+    right: 60px;
+    background: #87C3BD;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 4px;
+    float: right;
+    color: black;
+}
+#recipe-button:hover {
+    background-color: #01A3A4;
+    color: white;
+    cursor: pointer;
+}
+#profile-nav{
+    padding-top: 8px;
+    font-size: 20px;
+}
+   
+ /* .buton1 {
+    font-family: sans-serif;
+    top: 24%;
+    right: 60px;
+    background: #87C3BD;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px 5px;
+    font-family: raleway;
+    border-radius: 4px;
+    float: right;
+}  */
+
+
 
 .p1{
     padding-left: 170px;
@@ -76,12 +103,13 @@ nav .nav-items li a{
     font-size: 15px;
     font-family: raleway;
     float: right;
-    padding-top: 8px;
-   
+
+    padding-top: 10px;
+
 }
 #checkbox-text1{
     position: absolute;
-    top: 11%;
+    top: 10.5%;
     right: 15px;
     padding: 5px;
     padding-bottom: 5px;
@@ -101,17 +129,17 @@ nav .nav-items li a{
     border-radius: 4px;
     float: right;
 }
-#button1{
+/* #button1{
     position: absolute;
     top: 25%;
-  }
+  } */
   
 .flex-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-family: raleway;
   }
   .flex-container > div {
@@ -119,7 +147,7 @@ nav .nav-items li a{
     margin-right: 25px;
     padding: 0px;
     font-size: 30px;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 10px 5px 20px rgba(182, 181, 181, 0.3);
     padding-top: 10px;
     border-radius: 4px;
     padding-bottom: 2px;
@@ -139,10 +167,12 @@ nav .nav-items li a{
 }
 .text2{
     font-family: raleway;
+    padding-bottom: 5px;
 }
 #text3 {
    float: right;
    font-family: raleway;
+   padding-bottom: 5px;
 }
 .search-box{
     position: absolute;
@@ -211,6 +241,7 @@ nav .nav-items li a{
   }
  .article{
      font-size: 8px;
+     width: 250px;
      text-decoration: none;
      display: inline-block;
     font-family: raleway;
@@ -245,13 +276,12 @@ nav .nav-items li a{
 }
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-.day-meals{
-    position: absolute;
+#day-meals{
+    position: relative;
     display: inline-block;
-    right: 500px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-left: 670px;
     font-family: raleway;
+    
 }
 /* New search bar for main page */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');

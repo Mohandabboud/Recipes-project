@@ -13,6 +13,7 @@ var tenth = "86f05ba6bcc64fc2880897e48d47d039";
 var eleventhApi = "780aeeca39d34a1bab3789be644f5daf";
 var twe = "7ce486be45a448109308699782ff0104";
 var thi = "7ce486be45a448109308699782ff0104";
+var newa = "25f5501ccd49492fa0397d909e09bfdb";
 
 var array = [];
 var number = 0;
@@ -23,12 +24,12 @@ var number = 0;
 
 
 
-    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ eighthAPI+"&includeIngredients="+ myParam)
+    fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ secondAPI +"&includeIngredients="+ myParam)
     .then(response => response.json())
     .then( data => {
         console.log(data)
         data.results.forEach( function (item) {
-            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + eighthAPI)
+            fetch("https://api.spoonacular.com/recipes/"+ item.id +"/information?apiKey=" + secondAPI)
             .then(response => response.json())
             .then( recipe => { console.log(recipe)
                 array[number] = recipe;
