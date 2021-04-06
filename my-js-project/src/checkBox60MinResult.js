@@ -8,7 +8,10 @@ var seventhAPI = "5dc571ad8c4442e3be0ebea89c223437";
 var eighthAPI = "144b024c11254237bd7586886f98dfec";
 var ninth = "6c57e3dc41534860aa8c3644fd3f6f23";
 var tenth = "86f05ba6bcc64fc2880897e48d47d039";
-var aa = "77a0b29b0f524bcfad69eca6b8e94131";
+var aa = "dce7fdccb5fb4eb8a4541cbd46ac0c57";
+var extra1= "3cf5412e9a7e49f395cead86319f379c";
+var extra2 = "6c8747902ef34b93bd3f3b0c5e4d9fad";
+
 
 function time60MinsFunction () {
     fetch("https://api.spoonacular.com/recipes/complexSearch?apiKey="+ aa +"&maxReadyTime=60&number=10")

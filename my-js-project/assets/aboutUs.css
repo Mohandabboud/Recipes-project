@@ -87,11 +87,12 @@ nav .nav-items li a{
 }
 .grid {
   display: grid;
-  width: 114em;
-  grid-gap: 6rem;
+  column-gap: 4rem;
+  row-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
-  padding-left: 20em;
+  justify-content: center;
+  padding: 0 10vw;
 
 }
 
@@ -149,15 +150,7 @@ nav .nav-items li a{
   width: 100%;
 }
 
-@media only screen and (max-width: 60em) {
-  body {
-    padding: 3rem;
-  }
 
-  .grid {
-    grid-gap: 3rem;
-  }
-}
 .footer-distributed{
   background: #87C3BD;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
